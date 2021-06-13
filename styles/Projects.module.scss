@@ -21,17 +21,24 @@
             width: 100%;
             padding: 30px;
             margin-top: 80px;
-            background: #bfd8d5;
+            background: #d1d9d9;
             overflow: hidden;
+            cursor: pointer;
 
             .title {
                 font-size: 27px;
                 font-family: 'Montserrat', sans-serif;
                 font-weight: 600;
                 margin: 40px 0;
-                background: #bfd8d5;
-                color: #1b1b1b;
+                background: #d1d9d9;
+                color: #fff;
+                transition: all 0.3s ease-out;
+
             } 
+
+            .title-active {
+                font-size: 30px;
+            }
 
             
 
@@ -39,6 +46,7 @@
                 width: 100%;
                 height: 40%;
                 transform: translate(-10%, 15%);
+                transition: all 0.3s ease-out;
                 
 
                 img {
@@ -47,6 +55,11 @@
 
 
                 }
+            }
+
+             .image-active {
+                transform: translate(0, 15%) ;
+                
             }
 
         }
@@ -125,8 +138,10 @@
             max-width: 80%;
             width: 100%;
             padding:  30px;
-            background: #dddddd;
+            background: #bd9354;
             overflow: hidden;
+            cursor: pointer;
+
 
 
             .title {
@@ -134,21 +149,29 @@
                 font-family: 'Montserrat', sans-serif;
                 font-weight: 600;
                 margin: 40px 0;
-                background: #dddddd;
-                color: #1b1b1b;
+                background: #bd9354;
+                color: #fff;
+                transition: all 0.3s ease-out;
 
             } 
 
-            .titles{
+             .titles{
                 background: #c9d99e;
-                color: #1b1b1b;
+                color: #fff;
             }
+
+            .title-active {
+                font-size: 30px;
+            }
+
+           
 
             .image {
                 width: 100%;
                 height: 40%;
-                border-radius: 10px;
                 transform: translate(15%, 15%);
+                transition: all 0.3s ease-out;
+
 
                 img {
                     width: 100%;
@@ -156,9 +179,18 @@
                 }
             }
 
+            .image-active {
+                transform: translate(0, 15%) ;
+                
+            }
+
             
             .images {
                 transform: translate(0, 15%);
+            }
+
+            .images-active {
+                transform: translate(0, 0);
             }
         }
 
