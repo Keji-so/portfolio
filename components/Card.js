@@ -1,12 +1,19 @@
+// import  {useEffect} from 'react'
 import styles from '../styles/Home.module.scss';
-import { Projects } from './projects.js'
+import { Projects } from './data.js';
 import { BsBoxArrowInUpRight } from "react-icons/bs";
 import { VscRepoForked } from "react-icons/vsc";
 
 
 
 function Card() {
-    return (
+
+   
+return (
+    <>  
+    <div className={styles.projects}>
+        Projects
+    </div>
     <div className={styles.card_container}>
        {Projects.map(project => {
        
@@ -38,6 +45,7 @@ function Card() {
        })}
         
    </div>
+   </>
     )
 }
 

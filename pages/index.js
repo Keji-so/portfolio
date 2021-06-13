@@ -1,13 +1,13 @@
 import Head from 'next/head'
-import Card from '../components/Card'
+import Project from '../components/Project'
 import Nav from '../components/Nav'
 import styles from '../styles/Home.module.scss'
 
-
 export default function Home() {
+
   return (
-    
-    <>
+
+     <>
       <Head>
         <title>Morenikeji</title>
         <meta name="description" content="frontend portfolio homepage developer" />
@@ -48,12 +48,9 @@ export default function Home() {
        <div className={styles.right}>
           <Nav />
        </div>
+ </div>
 
-       
-      
-     </div>
-
-    <Card />
+   <Project />
     </> 
   )
 }
