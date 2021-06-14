@@ -121,26 +121,28 @@
     font-family: 'Montserrat', sans-serif;
     font-size: 42px;
     font-weight: 600;
-    margin: 50px 30px;
+    margin: 50px 0;
     color: #222831;
 
 }
 
 .card_container {
-    overflow: auto;
     display: flex;
-    flex-wrap: nowrap;
-    height: 50%;
+    flex-wrap: wrap;
+    flex-shrink: 1; 
+    justify-content: center;
 
 
-    &::-webkit-scrollbar {
-        display: none;
-    }
 
     .card {
         width: 30%;
         height: 100%;
         margin: 50px 30px;
+        display: flex;
+        justify-content: center;
+
+
+        
     
         .container {
             width: 300px;

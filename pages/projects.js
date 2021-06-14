@@ -1,6 +1,7 @@
 // import  {useEffect} from 'react'
+import Link from 'next/link'
 import styles from '../styles/Home.module.scss';
-import { Projects } from './data.js';
+import { Projects } from '../components/data.js';
 import { BsBoxArrowInUpRight } from "react-icons/bs";
 import { VscRepoForked } from "react-icons/vsc";
 
@@ -30,14 +31,20 @@ return (
                 
               </div>
               <div className={styles.direct}>
+
+             <Link href={project.live}>
                 <div className={styles.live}>
                   <div className={styles.icon}><BsBoxArrowInUpRight size="1.2rem" /></div>
                   <div className={styles.lives}><a>Live</a></div>
                 </div>
+               </Link> 
+              
+               <Link href={project.code}>
                 <div className={styles.live}>
                   <div className={styles.icon}><VscRepoForked size="1.2rem" /></div>
                   <div className={styles.codes}><a>Code</a></div>
                 </div>
+               </Link>
               </div>
             </div>
           </div>

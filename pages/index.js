@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Project from '../components/Project'
+import Contact from '../components/Contact'
 import Nav from '../components/Nav'
 import styles from '../styles/Home.module.scss'
 
@@ -51,6 +52,8 @@ export default function Home() {
  </div>
 
    <Project />
+
+   <Contact />
     </> 
   )
 }
