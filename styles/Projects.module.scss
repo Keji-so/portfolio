@@ -12,6 +12,7 @@
 
 .project {
     display: flex;
+    margin: 10% 0;
 
     .left {
         width: 50%;
@@ -21,6 +22,7 @@
          }
 
         .container {
+            margin-left: 10%;
             max-width: 80%;
             width: 100%;
             padding: 30px;
@@ -141,6 +143,7 @@
 
         .container {
             max-width: 80%;
+            margin-left: 10%;
             width: 100%;
             padding:  30px;
             background: #bd9354;

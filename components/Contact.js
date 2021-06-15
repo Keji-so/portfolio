@@ -1,6 +1,6 @@
 import {useState} from 'react';
 import styles from '../styles/Contact.module.scss';
-// import React from 'react';
+
 
 
 
@@ -31,27 +31,36 @@ function Contact() {
     return (
         <div>
             <div className={styles.contact}>
-                Contact
+                Contact Me!
             </div>
 
             <div>
-               <form onSubmit={handleSubmit} action="https://formsubmit.co/ojokeji@gmail.com" method="POST">
-                   <div>
-                       <div className="stuff">
-                            <input value={data.name} onChange={handleChange} type="text" className="form-control" placeholder="Name" name="name" required/>
-                     </div>
-                     <div className="stuff">
-                           <input value={data.email} onChange={handleChange} type="email" className="form-control" placeholder="Email Address" name="email" required/>
-                     </div>
-                     <div className="stuff">
-                          <textarea value={data.message} onChange={handleChange} className="form-control" id="" cols="30" rows="8" placeholder="Your message" name="message" required></textarea>
-                     </div>
-                     <div className="stuff">
-                         <input onSubmit="window.location.reload();" type="submit" className="btn btn-info" value="Send Message"></input>
-                     </div>
-                     <input type="hidden" name="_captcha" value="false"></input>
-                     <input type="hidden" name="_next" value="http://localhost:3000/contact"></input>
-                     
+               <form className={styles.form} onSubmit={handleSubmit} action="https://formsubmit.co/ojokeji@gmail.com" method="POST">
+                   <div className={styles.form_container}>
+
+                      <div className={styles.info}>
+                        <div className={styles.name}>
+                                <div className={styles.label}>Fullname</div>
+                                <input value={data.name} onChange={handleChange} type="text" className="form-control" placeholder="Name" name="name" required/>
+                        </div>
+                        <div className={styles.email}>
+                             <div className={styles.label}>Email</div>
+                            <input value={data.email} onChange={handleChange} type="email" className="form-control" placeholder="Email Address" name="email" required/>
+                        </div>
+                    </div> 
+                    
+                        <div className={styles.message}>
+                             <div className={styles.label}>Message</div>
+                            <textarea value={data.message} onChange={handleChange} className="form-control" id="" cols="30" rows="8" placeholder="Your message" name="message" required></textarea>
+                        </div>
+
+                        <div className={styles.button}>
+                            <input  type="submit" className={styles.btn} value="Send Message"></input>
+                        </div>
+
+                        <input type="hidden" name="_captcha" value="false"></input>
+                        <input type="hidden" name="_next" value="http://localhost:3000/contact"></input>
+                        
                    </div>
                </form>    
 

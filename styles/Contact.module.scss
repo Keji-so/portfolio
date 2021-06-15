@@ -5,7 +5,104 @@
     font-family: 'Montserrat', sans-serif;
     font-size: 42px;
     font-weight: 600;
-    margin: 40px 30px;
+    margin: 20px 30px;
     color: #222831;
 
+}
+
+.form  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    .form_container {
+         width: 100%;
+         margin: 50px;
+
+
+        .info {
+            display: flex;
+            margin-bottom: 5%;
+
+            .name {
+                width: 50%;
+            }
+
+            .email {
+                width: 50%;
+            }
+
+            .label {
+                font-size: 20px;
+                color: #343A40;
+                font-weight: 600;
+                margin-bottom: 5%;
+            }
+
+            input {
+                max-width: 80%;
+                width: 100%;
+                border: none;
+                border-bottom: #cbcbcb 1px solid;
+                outline: none;
+                transition: all 0.3s ease;
+                font-size: 16px;
+                color:#1b1b1b;
+
+                &:focus {
+                    border-bottom: #8DB596 1px solid;
+                }
+            }
+        }
+
+        .message {
+
+            .label {
+                margin-bottom: 3%;
+                font-size: 20px;
+                color: #343A40;
+                font-weight: 600;
+            }
+
+            textarea {
+                width: 100%;
+                border: none;
+                border-bottom: #cbcbcb 1px solid;
+                outline: none;
+                transition: all 0.3s ease;
+                font-size: 16px;
+                color:#1b1b1b;
+
+                &:focus {
+                    border-bottom: #8DB596 1px solid;
+                }
+            }
+
+        }
+
+        .button {
+            margin: 3% 0;
+            align-self: center;
+
+            .btn {
+                outline: none;
+                border: #8DB596 2px solid;
+                border-radius: 40px;
+                padding: 15px 60px;
+                cursor: pointer;
+                font-size: 15px;
+                transition : all 0.3s ease;
+                color: #343A40;
+                font-weight: 600;
+
+                &:hover {
+                    background: #8DB596;
+                    color: #fff;
+                }
+            }
+        }
+
+    }
+   
 }

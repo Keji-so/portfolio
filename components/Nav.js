@@ -3,6 +3,8 @@ import styles from '../styles/Nav.module.scss';
 import { AiFillGithub } from "react-icons/ai";
 import { FaLinkedin } from "react-icons/fa";
 import { AiOutlineTwitter } from "react-icons/ai";
+import Link from 'next/link'
+
 
 
 function Nav({handleDropDown}) {
@@ -26,13 +28,20 @@ function Nav({handleDropDown}) {
         <div className={styles.menu}>
           <div className={styles.part}>
             <div className={ `${styles["option"]} ${styles["about"]}`}>About</div>
+        <Link href="/projects">
             <div className={ `${styles["option"]} ${styles["projects"]}`}>Projects</div>
-          </div>
+        </Link>
+         </div>
           <div className={styles.part}>
+        <Link href="/contact">
             <div className={ `${styles["option"]} ${styles["contact"]}`}>Contact</div>
+        </Link>
+            
             <div className={ `${styles["option"]} ${styles["resume"]}`}>Resume</div>
            </div>
+        <Link href="https://hashnode.com/@Keji">
             <div className={ `${styles["option"]} ${styles["articles"]}`}>Articles</div>
+        </Link>
 
        
         </div>
