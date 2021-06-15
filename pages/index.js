@@ -23,7 +23,7 @@ export default function Home() {
 
           <div className={styles.content}>
              <h1>Morenikeji Ojo.</h1>
-             <div className={styles.desc}>I’m a Frontend software developer, passionate about transforming ideas from pixels to scalable products. I create functional applications with user experience as top priority.</div>
+             <div className={styles.desc}>I’m a Frontend software developer, with a passion for responsive website design and a firm believer in the mobile-first approach.</div>
           
            </div>
 

@@ -209,6 +209,58 @@
 
 }
 
+.thanks {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    max-height: 100vh;
+    height: 80%;
+    max-width: 100vw;
+    width: 80%;
+    font-family: 'Montserrat', sans-serif;
+
+    .container {
+        margin: 5%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .icon {
+            color: #4B778D;
+        }
+
+        .title {
+            font-size: 36px;
+        }
+
+        .message {
+            font-size: 22px;
+            margin: 10px 0;
+        }
+
+        .button {
+            margin: 20px;
+            cursor: pointer;
+            border: transparent 1px solid;
+            border-radius: 50px;
+            background: #4B778D;
+            padding: 15px 30px;
+            color: #f1f1f1;
+            transition: all 0.3s ease;
+
+            &:hover {
+                color:#4B778D;
+                background: #f1f1f1;
+                font-weight: 600;
+                border: #4B778D 2px solid;
+            }
+        }
+
+
+    }
+}
+
 
 
 

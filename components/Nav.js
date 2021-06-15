@@ -1,8 +1,8 @@
 // import {useState} from 'react';
 import styles from '../styles/Nav.module.scss';
 import { AiFillGithub } from "react-icons/ai";
-import { FaLinkedin } from "react-icons/fa";
 import { AiOutlineTwitter } from "react-icons/ai";
+import { FaLinkedin } from "react-icons/fa";
 import Link from 'next/link'
 
 

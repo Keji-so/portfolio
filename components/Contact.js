@@ -59,7 +59,7 @@ function Contact() {
                         </div>
 
                         <input type="hidden" name="_captcha" value="false"></input>
-                        <input type="hidden" name="_next" value="http://localhost:3000/contact"></input>
+                        <input type="hidden" name="_next" value="http://localhost:3000/thanks"></input>
                         
                    </div>
                </form>    
