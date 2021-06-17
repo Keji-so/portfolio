@@ -17,9 +17,7 @@ export default function Home() {
      <div className={styles.stuff}>
 
        <div className={styles.left}>
-          <div className={styles.name}>
-             Morenikeji
-          </div>
+         
 
           <div className={styles.content}>
              <h1>Morenikeji Ojo.</h1>
@@ -51,9 +49,10 @@ export default function Home() {
        </div>
  </div>
 
-   <Project />
+ <Project />
 
-   <Contact />
+<Contact />
+   
     </> 
   )
 }

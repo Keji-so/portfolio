@@ -55,9 +55,15 @@ function Nav({handleDropDown}) {
           </div> */}
 
           <div className={styles.icons}>
+        <Link href="https://github.com/Keji-so">
             <div className={styles.icon}><AiFillGithub size="1.8rem" /></div>
+        </Link>
+        <Link href="https://github.com/Keji-so">
             <div className={styles.icon}><FaLinkedin size="1.8rem" /></div>
+        </Link>
+        <Link href="https://github.com/Keji-so">
             <div className={styles.icon}><AiOutlineTwitter size="1.8rem" /></div>
+        </Link>
           </div>
 
          

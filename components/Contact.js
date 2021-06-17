@@ -1,5 +1,9 @@
 import {useState} from 'react';
 import styles from '../styles/Contact.module.scss';
+import { AiFillGithub } from "react-icons/ai";
+import { AiOutlineTwitter } from "react-icons/ai";
+import { FaLinkedin } from "react-icons/fa";
+import Link from 'next/link'
 
 
 
@@ -34,7 +38,9 @@ function Contact() {
                 Contact Me!
             </div>
 
-            <div>
+        <div className={styles.container}>
+
+            <div className={styles.left}>
                <form className={styles.form} onSubmit={handleSubmit} action="https://formsubmit.co/ojokeji@gmail.com" method="POST">
                    <div className={styles.form_container}>
 
@@ -65,6 +71,32 @@ function Contact() {
                </form>    
 
             </div>
+
+            <div className={styles.right}>
+                <div className={styles.connect}>Connect with me</div>
+                <div className={styles.name}>Morenikeji Ojo</div>
+                <div className={styles.email}>ojokeji@gmail.com</div>
+                <div className={styles.location}>Lagos, Nigeria.</div>
+
+
+                <div className={styles.socials}>
+                    <div className={styles.icons}>
+                        <Link href="https://github.com/Keji-so">
+                            <div className={styles.icon}><AiFillGithub size="1.8rem" /></div>
+                        </Link>
+                        <Link href="https://github.com/Keji-so">
+                            <div className={styles.icon}><FaLinkedin size="1.8rem" /></div>
+                        </Link>
+                        <Link href="https://github.com/Keji-so">
+                            <div className={styles.icon}><AiOutlineTwitter size="1.8rem" /></div>
+                        </Link>
+                    </div>
+                </div>
+           </div>
+
+            </div>
+
+
         </div>
     )
 }

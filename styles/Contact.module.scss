@@ -10,6 +10,15 @@
 
 }
 
+.container {
+    display: flex;
+
+    .left {
+        max-width: 70%;
+        width: 100%;
+
+
+        
 .form  {
     display: flex;
     align-items: center;
@@ -106,3 +115,54 @@
     }
    
 }
+    }
+
+    .right {
+        max-width: 30%;
+        width: 100%;
+        margin: 50px;
+        font-family: 'Montserrat', sans-serif;
+        color: #1b1b1b;
+        display: flex;
+        flex-direction: column;
+
+        .connect {
+            font-size: 38px;
+            margin: 20px 0;
+            font-weight: 200;
+
+        }
+        
+        .name, .location, .email {
+            font-size: 18px;
+            margin: 20px 0;
+            font-weight: 600;
+
+        }
+
+        .socials {
+            width: 100%;
+
+            .icons {
+                display: flex;
+                justify-content: space-between;
+                width: 70%;
+        
+                .icon {
+                    color: #524f4f;
+                    cursor: pointer;
+                    margin-top: 40px;
+        
+                    &:hover {
+                        color: #1b1b1b;
+                        transition: all 0.3s ease;
+                    }
+                }
+        
+        
+            }
+        }
+    }
+}
+
+

@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600;700&display=swap');
 
 .stuff {
     padding-bottom: 10px;
@@ -9,13 +9,7 @@
     .left {
         width: 60vw;
 
-        .name {
-            font-size: 30px;
-            font-weight: 900;
-            color: #2d2d2d;
-            font-family: 'Montserrat', sans-serif;
-
-        }
+    
 
         .content {
             padding-top: 10%;
@@ -114,6 +108,8 @@
  .right {
         width: 40vw;
         justify-self: center;
+
+        
     }
 }
 
@@ -231,10 +227,12 @@
         }
 
         .title {
+            color: #343A40;
             font-size: 36px;
         }
 
         .message {
+            color: #343A40;
             font-size: 22px;
             margin: 10px 0;
         }
@@ -259,6 +257,16 @@
 
 
     }
+}
+
+.name {
+    font-size: 48px;
+    font-weight: 700;
+    color: #2d2d2d;
+    font-family: 'Josefin Sans', sans-serif;
+    max-width: 10%;
+    width: 100%;
+    cursor: pointer;
 }
 
 
