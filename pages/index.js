@@ -3,6 +3,8 @@ import Project from '../components/Project'
 import Contact from '../components/Contact'
 import Nav from '../components/Nav'
 import styles from '../styles/Home.module.scss'
+import Link from 'next/link'
+
 
 export default function Home() {
 
@@ -25,6 +27,7 @@ export default function Home() {
           
            </div>
 
+        <Link href="https://drive.google.com/file/d/1a0txSzZOrmOzmeRlK73wxmSvkO7zzVkh/view?usp=sharing">
            <div className={styles.btn}>
                 <span class={styles.link}>
                     <span class={styles.link__inner}>
@@ -37,6 +40,7 @@ export default function Home() {
                     </span>
               </span>
            </div>
+         </Link>
 
           
         <div className={styles.email}>

@@ -27,7 +27,9 @@ function Nav({handleDropDown}) {
 
         <div className={styles.menu}>
           <div className={styles.part}>
+        <Link href="/about">
             <div className={ `${styles["option"]} ${styles["about"]}`}>About</div>
+        </Link>
         <Link href="/projects">
             <div className={ `${styles["option"]} ${styles["projects"]}`}>Projects</div>
         </Link>
@@ -36,8 +38,9 @@ function Nav({handleDropDown}) {
         <Link href="/contact">
             <div className={ `${styles["option"]} ${styles["contact"]}`}>Contact</div>
         </Link>
-            
+        <Link href="https://drive.google.com/file/d/1a0txSzZOrmOzmeRlK73wxmSvkO7zzVkh/view?usp=sharing">
             <div className={ `${styles["option"]} ${styles["resume"]}`}>Resume</div>
+        </Link>
            </div>
         <Link href="https://hashnode.com/@Keji">
             <div className={ `${styles["option"]} ${styles["articles"]}`}>Articles</div>
