@@ -111,12 +111,16 @@
     margin: 50px 0;
     color: #222831;
 
+    @include bp(mobile) {
+                margin-bottom: 20px; 
+    }
+
 }
 
 .card_container {
     display: flex;
     flex-wrap: wrap;
-    flex-shrink: 1; 
+    // flex-shrink: 1; 
     justify-content: center;
 
 
@@ -126,14 +130,17 @@
         height: 100%;
         margin: 50px 30px;
         display: flex;
+
         justify-content: center;
 
 
         
     
         .container {
+            display: flex;
+            flex-direction: column;
             width: 300px;
-            height: 200px;
+            height: 220px;
             padding: 20px;
             border: #cbcbcb  1px solid;
             transition: transform 0.3s ease;
@@ -207,6 +214,10 @@
     width: 80%;
     font-family: 'Montserrat', sans-serif;
 
+    @include bp(mobile) {
+        width: 100%;
+    }
+
     .container {
         margin: 5%;
         display: flex;
@@ -226,6 +237,11 @@
             color: #343A40;
             font-size: 22px;
             margin: 10px 0;
+
+            @include bp(mobile) {
+                font-size: 16px;
+                
+            }
         }
 
         .button {

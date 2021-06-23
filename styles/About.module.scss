@@ -1,8 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+@import "mixins";
+
 
 .about {
     margin: 5% 13%;
     color: #1b1b1b;
+
+    @include bp(mobile) {
+              margin: 8% 0;  
+    }
 
 
     .top {
@@ -16,6 +22,12 @@
             max-width: 40%;
             line-height: 60px;
            font-family: 'Montserrat', sans-serif;
+
+           @include bp(mobile) {
+                font-size: 30px;
+                line-height: 35px;
+                max-width: 50%;
+        }
     
         }
 
@@ -31,6 +43,11 @@
                 color: #524f4f;
                 cursor: pointer;
                 margin: 0 15px;
+
+                @include bp(mobile) {
+                 margin: 0 5px;
+                 size: 1rem;
+                }
     
                 &:hover {
                     color: #1b1b1b;
@@ -49,6 +66,13 @@
         width: 100%;
         color: #524f4f;
         font-family: 'Poppins', sans-serif;
+
+        @include bp(mobile) {
+                max-width: 100%;
+                font-size: 14px;
+                font-weight: 400;
+                margin: 8% 0;
+        }
     }
 
     .links {
@@ -64,6 +88,10 @@
             display: flex;
             align-items: center;
             justify-content: center;
+
+            @include bp(mobile) {
+                width: 40%;
+            }
     
             .link {
                 display: inline-flex;
@@ -77,6 +105,10 @@
                     color: #565353;
                     font-weight: 600;
                     font-family: 'Montserrat', sans-serif;
+
+                    @include bp(mobile) {
+                         font-size: 11px;
+                    }
                  }
     
                         &__inner {

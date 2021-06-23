@@ -42,7 +42,7 @@ function about() {
                 <span class={styles.link}>
                     <span class={styles.link__inner}>
                         <span>
-                        <a>Download Resume</a> 
+                        <a>Download CV</a> 
                         </span>
                       <span class={styles.link__animated}>
                         <a>Download Resume</a>
