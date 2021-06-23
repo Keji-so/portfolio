@@ -27,20 +27,7 @@ export default function Home() {
           
            </div>
 
-        <Link href="https://drive.google.com/file/d/1a0txSzZOrmOzmeRlK73wxmSvkO7zzVkh/view?usp=sharing">
-           <div className={styles.btn}>
-                <span class={styles.link}>
-                    <span class={styles.link__inner}>
-                        <span>
-                        <a>Download Resume</a> 
-                        </span>
-                      <span class={styles.link__animated}>
-                        <a>Download Resume</a>
-                      </span>
-                    </span>
-              </span>
-           </div>
-         </Link>
+ 
 
           
         <div className={styles.email}>

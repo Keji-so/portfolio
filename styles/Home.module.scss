@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
 
 .stuff {
     padding-bottom: 10px;
@@ -28,68 +29,15 @@
                 font-size: 25px;
                 max-width: 70%;
                 width: 100%;
-                font-weight: 200;
+                font-weight: 400;
                 line-height: 38px;
                 color: #6f6d6d;
-                // font-family: 'Montserrat', sans-serif;
+                font-family: 'Poppins', sans-serif;
             }
         }
 
 
-        .btn {
-            margin-left: 12%;
-            width: 20%;
-            height: 50px;
-            border-radius: 5px;
-            border: #cbcbcb  1px solid;
-            display: flex;
-            align-items: center;
-            justify-content: center;
 
-            .link {
-                display: inline-flex;
-                align-items: center;
-                position: relative;
-                cursor: pointer;
-                overflow-y: hidden;
- 
-                 a {
-                    font-size: 13px;
-                    color: #565353;
-                    font-weight: 600;
-                    font-family: 'Montserrat', sans-serif;
-                 }
-    
-                        &__inner {
-                        display: flex;
-                        transform: translateY(0);
-                        transition: transform 0.3s ease-out;
-    
-    
-    
-                            > span {
-                                margin-right: 2px;
-    
-                             a{
-                                 display: inline-block;
-                                 
-                             }
-                        }
-    
-                            &:hover {
-                                transform: translateY(-100%);
-                                transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-                              }
-    
-                        }
-                        &__animated {
-                        position: absolute;
-                        top: 100%;
-    
-                        }
-              }
-
-        }
 
       .email {
           margin-left: 12%;
@@ -259,15 +207,29 @@
     }
 }
 
-.name {
-    font-size: 48px;
-    font-weight: 700;
+.names {
+    display: flex;
     color: #2d2d2d;
-    font-family: 'Josefin Sans', sans-serif;
-    max-width: 10%;
-    width: 100%;
-    cursor: pointer;
+    align-items: center;
+
+    .name {
+        font-size: 48px;
+        font-weight: 700;
+        font-family: 'Josefin Sans', sans-serif;
+        cursor: pointer;
+        text-align: center;
+    }
+
+    .fullname {
+       font-family: 'Montserrat', sans-serif;
+       font-size: 18px;
+       font-weight: 700; 
+       margin-left: 10px;
+    }
+
 }
+
+
 
 
 

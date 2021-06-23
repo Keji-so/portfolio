@@ -1,3 +1,116 @@
-.title {
-    color: green;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+
+.about {
+    margin: 5% 13%;
+    color: #1b1b1b;
+
+
+    .top {
+        display: flex;
+        justify-content: space-between;
+
+        .title {
+            font-size: 60px;
+            font-weight: 900;
+            width: 100%;
+            max-width: 40%;
+            line-height: 60px;
+           font-family: 'Montserrat', sans-serif;
+    
+        }
+
+        
+        
+        
+
+        .icons {
+            display: flex;
+            justify-content: space-between;
+    
+            .icon {
+                color: #524f4f;
+                cursor: pointer;
+                margin: 0 15px;
+    
+                &:hover {
+                    color: #1b1b1b;
+                    transition: all 0.3s ease;
+                }
+            }
+    }
+ }
+ 
+
+    .content {
+        margin: 5% 0;
+        font-weight: 600;
+        font-size: 18px;
+        max-width: 70%;
+        width: 100%;
+        color: #524f4f;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .links {
+        display: flex;
+        padding: 2% 0;
+
+        .btn {
+            margin-right: 10%;
+            width: 20%;
+            height: 50px;
+            border-radius: 5px;
+            border: #cbcbcb  1px solid;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+    
+            .link {
+                display: inline-flex;
+                align-items: center;
+                position: relative;
+                cursor: pointer;
+                overflow-y: hidden;
+    
+                 a {
+                    font-size: 13px;
+                    color: #565353;
+                    font-weight: 600;
+                    font-family: 'Montserrat', sans-serif;
+                 }
+    
+                        &__inner {
+                        display: flex;
+                        transform: translateY(0);
+                        transition: transform 0.3s ease-out;
+    
+    
+    
+                            > span {
+                                margin-right: 2px;
+    
+                             a{
+                                 display: inline-block;
+                                 
+                             }
+                        }
+    
+                            &:hover {
+                                transform: translateY(-100%);
+                                transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+                              }
+    
+                        }
+                        &__animated {
+                        position: absolute;
+                        top: 100%;
+    
+                        }
+              }
+    
+        }
+
+    }
+
+   
 }
