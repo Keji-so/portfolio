@@ -119,9 +119,14 @@
 
 .card_container {
     display: flex;
-    flex-wrap: wrap;
+    // flex-wrap: wrap;
     // flex-shrink: 1; 
     justify-content: center;
+
+    @include bp(mobile) {
+        flex-direction: column; 
+ }
+
 
 
 
@@ -133,8 +138,13 @@
 
         justify-content: center;
 
+       
+        @include bp(mobile) {
+        margin: 30px 0;
+        width: 100%;
 
-        
+     }
+
     
         .container {
             display: flex;
