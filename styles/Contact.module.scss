@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&display=swap');
-
+@import "mixins";
 
 .contact {
     font-family: 'Montserrat', sans-serif;
@@ -8,14 +8,31 @@
     margin: 20px 30px;
     color: #222831;
 
+    @include bp(mobile) {
+        font-size: 32px;
+        margin: 20px 10px;
+    }
+
 }
 
 .container {
     display: flex;
 
+
+
+@include bp(mobile) {
+    flex-direction: column;
+}
+
+
     .left {
         max-width: 70%;
         width: 100%;
+
+    @include bp(mobile) {
+        max-width: 100%;
+    }
+
 
 
         
@@ -29,17 +46,35 @@
          width: 100%;
          margin: 50px;
 
+         @include bp(mobile) {
+              margin: 20px 10px;  
+        }
+
 
         .info {
             display: flex;
             margin-bottom: 5%;
 
+            @include bp(mobile) {
+             flex-direction: column;
+            }
+
             .name {
                 width: 50%;
+
+                @include bp(mobile) {
+                width: 100%;
+                margin-bottom: 10%;
+                }
             }
 
             .email {
                 width: 50%;
+
+                @include bp(mobile) {
+                width: 100%;
+                margin-bottom: 10%;
+                }
             }
 
             .label {
@@ -47,6 +82,10 @@
                 color: #343A40;
                 font-weight: 600;
                 margin-bottom: 5%;
+
+                @include bp(mobile) {
+                font-size: 16px;
+                }
             }
 
             input {
@@ -59,10 +98,24 @@
                 font-size: 16px;
                 color:#1b1b1b;
 
+                @include bp(mobile) {
+                font-size: 12px;
+                max-width: 100%;
+                }
+
                 &:focus {
                     border-bottom: #8DB596 1px solid;
                 }
+
+                
             }
+
+            input::placeholder {
+                @include bp(mobile) {
+                 font-size: 12px;
+                }
+            }
+            
         }
 
         .message {
@@ -72,6 +125,10 @@
                 font-size: 20px;
                 color: #343A40;
                 font-weight: 600;
+
+                @include bp(mobile) {
+                 font-size: 16px;
+                }
             }
 
             textarea {
@@ -83,8 +140,18 @@
                 font-size: 16px;
                 color:#1b1b1b;
 
+                @include bp(mobile) {
+                 font-size: 12px;
+                }
+
                 &:focus {
                     border-bottom: #8DB596 1px solid;
+                }
+            }
+
+            textarea::placeholder {
+                @include bp(mobile) {
+                    font-size: 12px;
                 }
             }
 
@@ -93,6 +160,10 @@
         .button {
             margin: 3% 0;
             align-self: center;
+
+            @include bp(mobile) {
+                margin-top: 10%;
+            }
 
             .btn {
                 outline: none;
@@ -104,6 +175,11 @@
                 transition : all 0.3s ease;
                 color: #343A40;
                 font-weight: 600;
+
+                @include bp(mobile) {
+                padding: 10px 40px;
+                font-size: 13px;
+                }
 
                 &:hover {
                     background: #8DB596;
@@ -126,10 +202,21 @@
         display: flex;
         flex-direction: column;
 
+        @include bp(mobile) {
+            max-width: 100%;
+            margin: 15px 0;
+        }
+
+
         .connect {
             font-size: 38px;
             margin: 20px 0;
             font-weight: 200;
+
+            @include bp(mobile) {
+                font-size: 32px;
+                font-weight: 300;
+            }
 
         }
         
@@ -137,6 +224,10 @@
             font-size: 18px;
             margin: 20px 0;
             font-weight: 600;
+
+            @include bp(mobile) {
+                margin: 10px 0;
+            }
 
         }
 

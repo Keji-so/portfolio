@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900&display=swap');
+@import "mixins";
+
+
 
 *, :before, :after {
   box-sizing: border-box;
@@ -11,6 +14,12 @@ html {
   scroll-behavior: smooth;
   font-family: sans-serif;
   padding: 50px;
+
+@include bp(mobile) {
+
+  padding: 45px 25px;
+}
+
 
 }
 

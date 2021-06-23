@@ -1,14 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+@import "mixins";
 
-.stuff {
+
+.container {
     padding-bottom: 10px;
     display: flex;
     height: 100vh;
 
+    @include bp(mobile) {
+        height: auto;
+    }
+
     .left {
-        width: 60vw;
+        width: 60%;
+
+    @include bp(mobile) {
+        width: 100%;
+    }
+
 
     
 
@@ -16,12 +27,23 @@
             padding-top: 10%;
             padding-left: 12%;
 
+            @include bp(mobile) {
+                padding-left: 0;
+            }
+
 
             h1 {
                 font-size: 48px;
                 font-weight: 300;
                 font-family: 'Montserrat', sans-serif;
                 color: rgb(21, 20, 20);
+
+                @include bp(mobile) {
+                    font-size: 30px;
+                    font-weight: 700;
+                    // max-width: 100%;
+                }
+
             }
 
             .desc {
@@ -33,6 +55,13 @@
                 line-height: 38px;
                 color: #6f6d6d;
                 font-family: 'Poppins', sans-serif;
+
+                @include bp(mobile) {
+                    padding: 10% 0;
+                    font-size: 16px;
+                    max-width: 90%;
+                    line-height: 22px;
+                }
             }
         }
 
@@ -43,10 +72,19 @@
           margin-left: 12%;
           padding-top: 10%;
 
+          @include bp(mobile) {
+              margin-left: 0;
+              padding-top: 0;
+        }
+
           a {
               color: #185adb;
               font-size: 25px;
               cursor: pointer;
+
+              @include bp(mobile) {
+                  font-size: 18px;
+            }
           }
       }  
      
@@ -54,8 +92,13 @@
 
 
  .right {
-        width: 40vw;
+        width: 40%;
         justify-self: center;
+
+    @include bp(mobile) {
+        display: none;
+    }
+
 
         
     }
@@ -211,6 +254,9 @@
     display: flex;
     color: #2d2d2d;
     align-items: center;
+    height: 10vh;
+    position: sticky;
+    top: 0;
 
     .name {
         font-size: 48px;
@@ -228,6 +274,7 @@
     }
 
 }
+
 
 
 

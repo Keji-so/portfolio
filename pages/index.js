@@ -16,7 +16,7 @@ export default function Home() {
         <meta name="description" content="frontend portfolio homepage developer" />
       </Head>
 
-     <div className={styles.stuff}>
+     <div className={styles.container}>
 
        <div className={styles.left}>
          
