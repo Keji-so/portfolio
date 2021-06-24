@@ -90,6 +90,10 @@
                     transform: translate(-20%, 28%);
                 }
 
+                @include bp(laptop) {
+                    transform: translate(-15%, 29%);
+                }
+
                 img {
                     width: 100%;
                     height: 100%;
@@ -103,6 +107,10 @@
 
                 @include bp(mobile) {
                     transform: translate(0, 28%);
+                }
+
+                @include bp(laptop) {
+                    transform: translate(0, 29%);
                 }
                 
             }
@@ -140,6 +148,10 @@
             @include bp(mobile) {
                font-size: 14px;
                margin: 10%; 
+            }
+
+            @include bp(laptop) {
+                font-size: 15px;
             }
 
            
@@ -272,6 +284,10 @@
                     transform: translate(15%, 28%);
                 }
 
+                @include bp(laptop) {
+                    transform: translate(15%, 22%);
+                }
+
                 img {
                     width: 100%;
                     height: 100%;
@@ -284,6 +300,10 @@
                 @include bp(mobile) {
                     transform:translate( 0, 28%);
                 }
+
+                @include bp(laptop) {
+                    transform: translate(0, 22%);
+                }
                 
             }
 
@@ -293,6 +313,10 @@
 
                 @include bp(mobile) {
                     transform: translate(0, 20%);
+                }
+
+                @include bp(laptop) {
+                    transform: translate(0, 22%);
                 }
             }
 

@@ -39,6 +39,11 @@
                 padding-left: 0;
             }
 
+        @include bp(laptop) {
+            padding-left: 0;
+        }
+
+
 
             h1 {
                 font-size: 48px;
@@ -55,6 +60,11 @@
                 @include bp(tablet) {
                     font-size: 45px;
                     font-weight: 600;
+                }
+
+                @include bp(laptop) {
+                    font-size: 42px;
+                    font-weight: 500;
                 }
             }
 
@@ -80,6 +90,12 @@
                     max-width: 85%;
                     line-height: 35px;
                 }
+
+                @include bp(laptop) {
+                    font-size: 22px;
+                    max-width: 85%;
+                    line-height: 35px;
+                }
             }
         }
 
@@ -97,6 +113,10 @@
 
         @include bp(tablet) {
             padding-top: 3%;
+        }
+
+        @include bp(laptop) {
+            margin-left: 0;
         }
 
           a {

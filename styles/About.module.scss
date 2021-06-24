@@ -99,6 +99,10 @@
              max-width: 100%;
              font-weight: 400;   
         }
+
+        @include bp(laptop) {
+            max-width: 90%;
+        }
     }
 
     .links {
@@ -123,6 +127,10 @@
                 width: 50%;
             }
     
+            @include bp(laptop) {
+             width: 30%;
+            }
+
             .link {
                 display: inline-flex;
                 align-items: center;
