@@ -15,6 +15,10 @@
         display: flex;
         justify-content: space-between;
 
+        @include bp(tablet) {
+                flex-direction: column;
+        }
+
         .title {
             font-size: 60px;
             font-weight: 900;
@@ -28,6 +32,15 @@
                 line-height: 35px;
                 max-width: 50%;
         }
+
+        @include bp(tablet) {
+            font-size: 50px;
+            font-weight: 600;
+            max-width: 60%; 
+            line-height: 50px;
+            padding: 10px 0;
+        }
+        
     
         }
 
@@ -38,6 +51,10 @@
         .icons {
             display: flex;
             justify-content: space-between;
+
+            @include bp(tablet) {
+                display: none;
+            }
     
             .icon {
                 color: #524f4f;
@@ -47,6 +64,10 @@
                 @include bp(mobile) {
                  margin: 0 5px;
                  size: 1rem;
+                }
+
+                @include bp(tablet) {
+                    margin: 0;
                 }
     
                 &:hover {
@@ -73,6 +94,11 @@
                 font-weight: 400;
                 margin: 8% 0;
         }
+
+        @include bp(tablet) {
+             max-width: 100%;
+             font-weight: 400;   
+        }
     }
 
     .links {
@@ -91,6 +117,10 @@
 
             @include bp(mobile) {
                 width: 40%;
+            }
+
+            @include bp(tablet) {
+                width: 50%;
             }
     
             .link {

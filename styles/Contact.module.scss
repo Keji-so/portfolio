@@ -13,6 +13,11 @@
         margin: 20px 10px;
     }
 
+    @include bp(tablet) {
+       font-size: 38px; 
+       margin: 10px 30px;
+    }
+
 }
 
 .container {
@@ -22,6 +27,10 @@
 
 @include bp(mobile) {
     flex-direction: column;
+}
+
+@include bp(tablet) {
+       flex-direction: column; 
 }
 
 
@@ -34,6 +43,9 @@
     }
 
 
+    @include bp(tablet) {
+       max-width: 100%; 
+    }
 
         
 .form  {
@@ -66,6 +78,10 @@
                 width: 100%;
                 margin-bottom: 10%;
                 }
+
+                @include bp(tablet) {
+                    margin-bottom: 8%;
+                }
             }
 
             .email {
@@ -74,6 +90,10 @@
                 @include bp(mobile) {
                 width: 100%;
                 margin-bottom: 10%;
+                }
+
+                @include bp(tablet) {
+                    margin-bottom: 8%;
                 }
             }
 
@@ -85,6 +105,10 @@
 
                 @include bp(mobile) {
                 font-size: 16px;
+                }
+
+                @include bp(tablet) {
+                 margin-bottom: 8%;
                 }
             }
 
@@ -103,6 +127,11 @@
                 max-width: 100%;
                 }
 
+                @include bp(tablet) {
+                    max-width: 95%;
+                    font-size: 14px;
+                }
+
                 &:focus {
                     border-bottom: #8DB596 1px solid;
                 }
@@ -113,6 +142,10 @@
             input::placeholder {
                 @include bp(mobile) {
                  font-size: 12px;
+                }
+
+                @include bp(tablet) {
+                    font-size: 14px;
                 }
             }
             
@@ -129,6 +162,8 @@
                 @include bp(mobile) {
                  font-size: 16px;
                 }
+
+               
             }
 
             textarea {
@@ -142,6 +177,10 @@
 
                 @include bp(mobile) {
                  font-size: 12px;
+                }
+
+                @include bp(tablet) {
+                    font-size: 14px;
                 }
 
                 &:focus {
@@ -207,6 +246,12 @@
             margin: 15px 0;
         }
 
+        @include bp(tablet) {
+            max-width: 100%;
+            margin: 0;
+            padding: 0 50px;
+        }
+
 
         .connect {
             font-size: 38px;
@@ -215,6 +260,10 @@
 
             @include bp(mobile) {
                 font-size: 32px;
+                font-weight: 300;
+            }
+
+            @include bp(tablet) {
                 font-weight: 300;
             }
 
@@ -229,6 +278,10 @@
                 margin: 10px 0;
             }
 
+            @include bp(tablet) {
+                margin: 10px 0;
+            }
+
         }
 
         .socials {
@@ -238,6 +291,10 @@
                 display: flex;
                 justify-content: space-between;
                 width: 70%;
+
+                @include bp(tablet) {
+                    width: 30%;
+                }
         
                 .icon {
                     color: #524f4f;

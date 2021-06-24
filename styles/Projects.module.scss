@@ -13,6 +13,10 @@
         font-size: 30px
     }
 
+    @include bp(tablet) {
+        font-size: 38px;
+    }
+
 }
 
 .project {
@@ -23,10 +27,18 @@
         flex-direction: column-reverse;
     }
 
+    @include bp(tablet) {
+        flex-direction: column-reverse;
+    }
+
     .left {
         width: 50%;
 
         @include bp(mobile) {
+            width: 100%;
+        }
+
+        @include bp(tablet) {
             width: 100%;
         }
 
@@ -104,6 +116,10 @@
             position: relative;
             margin-top: 30%;
 
+            @include bp(tablet) {
+                margin-top: 15%;
+            }
+
 
 
         .btn {
@@ -125,6 +141,8 @@
                font-size: 14px;
                margin: 10%; 
             }
+
+           
             
 
             &::before {
@@ -187,6 +205,10 @@
 
         @include bp(mobile) {
             width: 100%;
+        }
+
+        @include bp(tablet) {
+             width: 100%;
         }
 
          a {

@@ -13,10 +13,18 @@
         height: auto;
     }
 
+    @include bp(tablet) {
+        height: auto;
+    }
+
     .left {
         width: 60%;
 
     @include bp(mobile) {
+        width: 100%;
+    }
+
+    @include bp(tablet) {
         width: 100%;
     }
 
@@ -44,6 +52,10 @@
                     // max-width: 100%;
                 }
 
+                @include bp(tablet) {
+                    font-size: 45px;
+                    font-weight: 600;
+                }
             }
 
             .desc {
@@ -62,6 +74,12 @@
                     max-width: 90%;
                     line-height: 22px;
                 }
+
+                @include bp(tablet) {
+                    font-size: 20px;
+                    max-width: 85%;
+                    line-height: 35px;
+                }
             }
         }
 
@@ -77,6 +95,10 @@
               padding-top: 0;
         }
 
+        @include bp(tablet) {
+            padding-top: 3%;
+        }
+
           a {
               color: #185adb;
               font-size: 25px;
@@ -84,6 +106,10 @@
 
               @include bp(mobile) {
                   font-size: 18px;
+            }
+
+            @include bp(tablet) {
+                font-size: 18px;
             }
           }
       }  
@@ -99,6 +125,9 @@
         display: none;
     }
 
+    @include bp(tablet) {
+        display: none;
+    }
 
         
     }
@@ -120,12 +149,15 @@
 .card_container {
     display: flex;
     flex-wrap: wrap;
-    // flex-shrink: 1; 
     justify-content: center;
 
     @include bp(mobile) {
         flex-direction: column; 
  }
+
+ @include bp(tablet) {
+          flex-direction: column;      
+}
 
 
 
@@ -146,6 +178,12 @@
 
      }
 
+     @include bp(tablet) {
+        width: 100%;
+        flex-wrap: nowrap;     
+        margin: 50px 0;
+    }
+
     
         .container {
             display: flex;
@@ -155,6 +193,10 @@
             padding: 20px;
             border: #cbcbcb  1px solid;
             transition: transform 0.3s ease;
+
+            @include bp(tablet) {
+                width: 350px;
+            }
 
             &:hover {
                transform: scale(1.2);
