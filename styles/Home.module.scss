@@ -339,16 +339,42 @@
     }
 }
 
+
+.cover {
+
+    overflow: hidden;
+
+
 .names {
     display: flex;
     color: #2d2d2d;
     align-items: center;
     height: 10vh;
-    position: sticky;
+    position: fixed;
+    padding: 0 50px;
+    padding-top: 30px;
+    left: 0;
+    right: 0;
     top: 0;
-    z-index: 999;
+    z-index: 99;
+    display: flex;
+    justify-content: space-between;
 
-    .name {
+    @include bp(mobile) {
+     padding: 0 25px;
+
+    }
+
+   
+
+
+
+
+    .left {
+        display: flex;
+        align-items: center;
+
+        .name {
         font-size: 48px;
         font-weight: 700;
         font-family: 'Josefin Sans', sans-serif;
@@ -356,14 +382,101 @@
         text-align: center;
     }
 
-    .fullname {
+        .fullname {
        font-family: 'Montserrat', sans-serif;
        font-size: 18px;
        font-weight: 700; 
        margin-left: 10px;
     }
+    }
+
+    .menu {
+        display: none;
+        align-items: center;
+        flex-direction: column;
+        overflow-x: hidden;
+        cursor: pointer;
+        transition: all 0.3s ease;
+
+
+        @include bp(mobile) {
+            display: flex;
+           }
+
+        @include bp(tablet) {
+         display: flex;
+        }
+
+        
+
+        .line {
+            background: #1b1b1b;
+            height:2px;
+            width: 18px;
+            margin: 2px;
+            transition: all 0.3s ease;
+
+        }
+
+        .center {
+            width: 28px;
+            transition: all 0.2s ease;
+
+        }
+
+        
+        .active {
+            transform: translateX(30px);
+            transition: all 0.2s ease;
+
+            }
+
+        .first {
+            transform: translateY(6px) rotate(45deg);
+            transition: all 0.3s ease;
+
+        }
+
+        .last {
+            transform: translateY(-6px) rotate(-45deg);
+            transition: all 0.3s ease;
+
+        }
+    }
+
+    .menu_active {
+        padding: 6px;
+        transition: all 0.3s ease;
+
+    }
+
 
 }
+
+.dropdown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    width: 100%;
+    z-index: 99;
+    position: fixed;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    transition: all 0.5s cubic-bezier(0.3,-0.55,0.27,1.2);
+
+}
+
+.drop_active {
+    transition: all 0.5s cubic-bezier(0.3,-0.55,0.27,1.2);
+    transform: translateX(100%);
+
+
+}
+}
+
+
 
 
 

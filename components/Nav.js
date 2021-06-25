@@ -1,4 +1,3 @@
-// import {useState} from 'react';
 import styles from '../styles/Nav.module.scss';
 import { AiFillGithub } from "react-icons/ai";
 import { AiOutlineTwitter } from "react-icons/ai";
@@ -7,18 +6,8 @@ import Link from 'next/link'
 
 
 
-function Nav({handleDropDown}) {
+function Nav() {
 
-    // const [ham, setHam] = useState(true);
-    // console.log(handleDropDown);
-
-    // const hamHover = () => {
-    //     setHam(false);
-    // }
-
-    // const hamLeave = () => {
-    //     setHam(true);
-    // }
 
    
 
@@ -48,14 +37,6 @@ function Nav({handleDropDown}) {
 
        
         </div>
-{/* 
-          <div className={styles.right}>
-                 <div className={styles.hamburger} onClick={() => handleDropDown()} onMouseEnter={hamHover} onMouseLeave={hamLeave}>
-                     <div className={styles.line}></div>
-                     <div className={`line center-line ${ham ? "" : "center-active"}`}></div>
-                     <div className={styles.line}></div>
-                 </div>
-          </div> */}
 
           <div className={styles.icons}>
         <Link href="https://github.com/Keji-so">

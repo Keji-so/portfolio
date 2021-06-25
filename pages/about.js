@@ -45,7 +45,7 @@ function about() {
                         <a>Download CV</a> 
                         </span>
                       <span class={styles.link__animated}>
-                        <a>Download Resume</a>
+                        <a>Download CV</a>
                       </span>
                     </span>
               </span>

@@ -23,11 +23,28 @@
         transition: all 0.3s ease;
         justify-content: space-evenly;
 
+        @include bp(mobile) {
+            height: 80%;
+        }
+
         .part {
             display: flex;
             justify-content: space-between;
+
+            @include bp(mobile) {
+                flex-direction: column;
+                align-items: center;
+            }
+
         }
         
+
+        .about, .contact {
+
+            @include bp(mobile) {
+                margin-bottom: 25px;
+            }
+        }
 
         .option {
             font-size: 22px;
@@ -42,6 +59,13 @@
             display: flex;
             justify-content: center;
             font-family: 'Montserrat', sans-serif;
+
+            @include bp(mobile) {
+                width: 50%;
+                align-self: center;
+            }
+
+
 
             &::before {
                 content: "";
