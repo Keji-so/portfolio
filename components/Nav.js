@@ -17,15 +17,15 @@ function Nav() {
         <div className={styles.menu}>
           <div className={styles.part}>
         <Link href="/about">
-            <div className={ `${styles["option"]} ${styles["about"]}`}>About</div>
+            <div className={ `${styles["option"]} ${styles["about"]}`}><a>About</a></div>
         </Link>
         <Link href="/projects">
-            <div className={ `${styles["option"]} ${styles["projects"]}`}>Projects</div>
+            <div className={ `${styles["option"]} ${styles["projects"]}`}><a>Projects</a></div>
         </Link>
          </div>
           <div className={styles.part}>
         <Link href="/contact">
-            <div className={ `${styles["option"]} ${styles["contact"]}`}>Contact</div>
+            <div className={ `${styles["option"]} ${styles["contact"]}`}><a>Contact</a></div>
         </Link>
         <Link href="https://drive.google.com/file/d/1a0txSzZOrmOzmeRlK73wxmSvkO7zzVkh/view?usp=sharing">
             <div className={ `${styles["option"]} ${styles["resume"]}`}>Resume</div>
