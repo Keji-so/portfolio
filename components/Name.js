@@ -15,6 +15,7 @@ function Name() {
 
 
     return (
+      <>
         <Link href="/">
 
      <div className={styles.cover}>
@@ -37,12 +38,15 @@ function Name() {
 
           </div>
 
-          <div className={ `${styles["dropdown"]} ${styles[ham ? "drop_active" : ""]}`}>
-                  <Nav />
-         </div>
      </div>
     
         </Link>
+
+        <div className={ `${styles["dropdown"]} ${styles[ham ? "drop_active" : ""]}`}>
+                  <Nav />
+         </div>
+
+        </>
     )
 }
 
