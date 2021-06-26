@@ -9,7 +9,7 @@ const Layout = ({children}) => {
   return (
         <div>
             <div>
-              <Name className={styles.sticky} />
+              <Name />
               {children}
             </div>
          </div>  

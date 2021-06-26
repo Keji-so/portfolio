@@ -1,13 +1,13 @@
 import styles from '../styles/Home.module.scss'
 import { IoMailOutline } from "react-icons/io5";
 import Link from 'next/link'
-import Layout from '../components/Layout'
+// import Layout from '../components/Layout'
 
 
 
 function thanks() {
     return (
-        <Layout>
+        <>
 
      
 
@@ -22,7 +22,7 @@ function thanks() {
             </div>
             
         </div>
-        </Layout>
+        </>
     )
 }
 

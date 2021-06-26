@@ -2,7 +2,7 @@ import styles from '../styles/About.module.scss';
 import Link from 'next/link'
 import { FaLinkedin } from "react-icons/fa";
 import { AiFillGithub } from "react-icons/ai";
-import Layout from '../components/Layout'
+// import Layout from '../components/Layout'
 
 
 
@@ -10,7 +10,7 @@ import Layout from '../components/Layout'
 
 function about() {
     return (
-      <Layout>
+      <>
     
 
 
@@ -77,7 +77,7 @@ function about() {
           
         </div>
 
-        </Layout>
+        </>
     )
 }
 
