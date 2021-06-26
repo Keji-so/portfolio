@@ -2,7 +2,7 @@ import styles from '../styles/About.module.scss';
 import Link from 'next/link'
 import { FaLinkedin } from "react-icons/fa";
 import { AiFillGithub } from "react-icons/ai";
-// import Layout from '../components/Layout'
+import Name from '../components/Name'
 
 
 
@@ -13,7 +13,7 @@ function about() {
       <>
     
 
-
+      <Name />
         <div className={styles.about}>
             <div className={styles.top}>
                 <div className={styles.title}>
