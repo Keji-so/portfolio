@@ -1,19 +1,19 @@
 import React from 'react'
 import Contact from '../components/Contact'
-import Name from '../components/Name'
+import Layout from '../components/Layout'
 
 
 
 
 function contact() {
     return (
-        <>
-        <Name  />
-
+      
+      
+<Layout>
         <div>
             <Contact />
         </div>
-        </>
+    </Layout>  
     )
 }
 

@@ -29,7 +29,7 @@ function Name() {
                   Morenikeji
                 </div>
              </div>
-        </Link>
+         </Link>
 
              <div className={ `${styles["menu"]} ${styles[ham ? "" : "menu_active"]}`} onClick={handleClick}>
                   <div className={ `${styles["line"]} ${styles[ham ? "" : "first"]}`}></div>

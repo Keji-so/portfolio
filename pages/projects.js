@@ -4,7 +4,7 @@ import styles from '../styles/Home.module.scss';
 import { Projects } from '../components/data.js';
 import { BsBoxArrowInUpRight } from "react-icons/bs";
 import { VscRepoForked } from "react-icons/vsc";
-import Name from '../components/Name'
+import Layout from '../components/Layout'
 
 
 
@@ -13,8 +13,8 @@ function Card() {
 
    
 return (
-    <>  
-      <Name  />
+    <Layout>  
+      
 
 
     <div className={styles.projects}>
@@ -57,7 +57,7 @@ return (
        })}
         
    </div>
-   </>
+   </Layout>
     )
 }
 

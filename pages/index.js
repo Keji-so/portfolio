@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Project from '../components/Project'
 import Contact from '../components/Contact'
-import Name from '../components/Name'
+import Layout from '../components/Layout'
 import Nav from '../components/Nav'
 import styles from '../styles/Home.module.scss'
 import Link from 'next/link'
@@ -11,13 +11,13 @@ export default function Home() {
 
   return (
 
-     <>
+     <Layout>
       <Head>
         <title>Morenikeji</title>
         <meta name="description" content="frontend portfolio homepage developer" />
       </Head>
 
-      <Name  />
+ 
 
      <div className={styles.container}>
 
@@ -47,6 +47,6 @@ export default function Home() {
 
 <Contact />
    
-    </> 
+    </Layout> 
   )
 }
