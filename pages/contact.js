@@ -1,6 +1,6 @@
 import React from 'react'
 import Contact from '../components/Contact'
-// import Layout from '../components/Layout'
+import Name from '../components/Name'
 
 
 
@@ -10,6 +10,7 @@ function contact() {
       
       
 <>
+        <Name />        
         <div>
             <Contact />
         </div>
