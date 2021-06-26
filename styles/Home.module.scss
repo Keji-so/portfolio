@@ -341,8 +341,7 @@
 
 
 .cover {
-
-    // overflow-x: hidden;
+    
 
 
 .names {
@@ -351,6 +350,8 @@
     align-items: center;
     height: 10vh;
     position: fixed;
+    width: 100vw;
+    overflow-x: hidden;
     padding: 0 50px;
     padding-top: 30px;
     left: 0;
@@ -462,11 +463,11 @@
     align-items: center;
     height: 90vh;
     width: 100%;
-    z-index: 99;
+    // z-index: 1;
     position: fixed;
     // overflow-x: hidden;
     // top: 0;
-    right: 0;
+    // right: 0;
     left: 0;
     bottom: 0;
     transition: all 0.5s cubic-bezier(0.3,-0.55,0.27,1.2);
@@ -474,6 +475,7 @@
 }
 
 .drop_active {
+    // height: 0;
     transition: all 0.5s cubic-bezier(0.3,-0.55,0.27,1.2);
     transform: translateX(100%);
 
