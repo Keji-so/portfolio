@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Project from '../components/Project'
 import Contact from '../components/Contact'
+import Name from '../components/Name'
 import Nav from '../components/Nav'
 import styles from '../styles/Home.module.scss'
 import Link from 'next/link'
@@ -15,6 +16,8 @@ export default function Home() {
         <title>Morenikeji</title>
         <meta name="description" content="frontend portfolio homepage developer" />
       </Head>
+
+      <Name  />
 
      <div className={styles.container}>
 

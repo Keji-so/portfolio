@@ -16,11 +16,11 @@ function Name() {
 
     return (
       <>
-        <Link href="/">
 
      <div className={styles.cover}>
            <div className={styles.names}>
              
+        <Link href="/">
              <div className={styles.left}>
                 <div className={styles.name}>
                   M
@@ -29,6 +29,7 @@ function Name() {
                   Morenikeji
                 </div>
              </div>
+        </Link>
 
              <div className={ `${styles["menu"]} ${styles[ham ? "" : "menu_active"]}`} onClick={handleClick}>
                   <div className={ `${styles["line"]} ${styles[ham ? "" : "first"]}`}></div>
@@ -40,7 +41,6 @@ function Name() {
 
      </div>
     
-        </Link>
 
         <div className={ `${styles["dropdown"]} ${styles[ham ? "drop_active" : ""]}`}>
                   <Nav />
