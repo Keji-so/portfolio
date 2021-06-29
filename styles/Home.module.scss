@@ -44,12 +44,17 @@
         }
 
 
+        .name_reveal {
+            overflow: hidden;
+
 
             h1 {
+                display: inline-block;
                 font-size: 48px;
                 font-weight: 300;
                 font-family: 'Montserrat', sans-serif;
                 color: rgb(21, 20, 20);
+                // opacity: 1;
 
                 @include bp(mobile) {
                     font-size: 30px;
@@ -67,6 +72,12 @@
                     font-weight: 500;
                 }
             }
+        }
+
+   
+        .description {
+
+            overflow: hidden;
 
             .desc {
                 padding: 4% 0;
@@ -97,6 +108,9 @@
                     line-height: 35px;
                 }
             }
+        }
+
+          
         }
 
 

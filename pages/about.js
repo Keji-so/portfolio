@@ -3,18 +3,21 @@ import Link from 'next/link'
 import { FaLinkedin } from "react-icons/fa";
 import { AiFillGithub } from "react-icons/ai";
 import Name from '../components/Name'
+import { motion } from 'framer-motion';
 
 
 
 
 
-function about() {
+function about(props) {
     return (
+     
       <>
     
 
       <Name />
-        <div className={styles.about}>
+        <motion.div layoutId="tan" exit={{ opacity: 0 }} initial={{y: -400, opacity: 0}}
+      animate={{y: 0, opacity: 1}} transition={{ duration: 0.7, delay: 0.1,  ease: "easeInOut" }} className={styles.about}>
             <div className={styles.top}>
                 <div className={styles.title}>
                     Morenikeji Ojo.
@@ -75,9 +78,10 @@ function about() {
             </div>
 
           
-        </div>
+        </motion.div>
 
         </>
+        
     )
 }
 
