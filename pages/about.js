@@ -16,8 +16,8 @@ function about(props) {
     
 
       <Name />
-        <motion.div layoutId="tan" exit={{ opacity: 0 }} initial={{y: -400, opacity: 0}}
-      animate={{y: 0, opacity: 1}} transition={{ duration: 0.7, delay: 0.1,  ease: "easeInOut" }} className={styles.about}>
+        <motion.div layoutId="tan" exit={{ opacity: 0 }} initial={{x: 400, opacity: 0}}
+      animate={{x: 0, opacity: 1}} transition={{ duration: 0.5, delay: 0.1,  ease: "linear" }} className={styles.about}>
             <div className={styles.top}>
                 <div className={styles.title}>
                     Morenikeji Ojo.

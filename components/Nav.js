@@ -3,7 +3,46 @@ import { AiFillGithub } from "react-icons/ai";
 import { AiOutlineTwitter } from "react-icons/ai";
 import { FaLinkedin } from "react-icons/fa";
 import Link from 'next/link'
+import { motion } from 'framer-motion';
 
+const easing = [0.6, -0.05, 0.01, 0.99];
+
+const fadeLeft = {
+  initial: {
+    x: 200,
+  },
+  animate: {
+    x: 0,
+    transition: {
+      duration: .6,
+      ease: easing,
+      delay: 0.9
+    }
+  }
+};
+
+const fadeRight = {
+  initial: {
+    x: -200,
+  },
+  animate: {
+    x: 0,
+    transition: {
+      duration: .6,
+      ease: easing,
+      delay: 0.9
+    }
+  }
+};
+
+const stagger = {
+  animate : {
+    transition: {
+      staggerChildren: 0.3,
+      delay: 0.3
+    }
+  }
+}
 
 
 function Nav() {
@@ -14,29 +53,29 @@ function Nav() {
     return (
       <div className={styles.nav}>
 
-        <div className={styles.menu}>
+        <motion.div className={styles.menu} variants={stagger}>
           <div className={styles.part}>
         <Link href="/about">
-            <a className={ `${styles["option"]} ${styles["about"]}`}>About</a>
+            <motion.a variants={fadeRight} className={ `${styles["option"]} ${styles["about"]}`}>About</motion.a>
         </Link>
         <Link href="/projects">
-            <a className={ `${styles["option"]} ${styles["projects"]}`}>Projects</a>
+            <motion.a variants={fadeLeft} className={ `${styles["option"]} ${styles["projects"]}`}>Projects</motion.a>
         </Link>
          </div>
           <div className={styles.part}>
         <Link href="/contact">
-            <a className={ `${styles["option"]} ${styles["contact"]}`}>Contact</a>
+            <motion.a variants={fadeRight} className={ `${styles["option"]} ${styles["contact"]}`}>Contact</motion.a>
         </Link>
         <Link href="https://drive.google.com/file/d/1a0txSzZOrmOzmeRlK73wxmSvkO7zzVkh/view?usp=sharing">
-            <div className={ `${styles["option"]} ${styles["resume"]}`}>Resume</div>
+            <motion.div variants={fadeLeft} className={ `${styles["option"]} ${styles["resume"]}`}>Resume</motion.div>
         </Link>
            </div>
         <Link href="https://hashnode.com/@Keji">
-            <div className={ `${styles["option"]} ${styles["articles"]}`}>Articles</div>
+            <motion.div variants={fadeRight} className={ `${styles["option"]} ${styles["articles"]}`}>Articles</motion.div>
         </Link>
 
        
-        </div>
+        </motion.div>
 
           <div className={styles.icons}>
         <Link href="https://github.com/Keji-so">

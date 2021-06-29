@@ -41,7 +41,7 @@ export default function Home() {
   return (
 
      <motion.div layoutId="lay" exit={{ opacity: 0 }} initial="initial"
-     animate="animate" transition={{ duration: 0.7,  ease: "easeInOut", delay: 0.1 }}>
+     animate="animate" transition={{ duration: 1,  ease: "easeIn", delay: 0.1 }}>
       <Head>
         <title>Morenikeji</title>
         <meta name="description" content="frontend portfolio homepage developer" />
