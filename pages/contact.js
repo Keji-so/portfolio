@@ -1,6 +1,10 @@
 import React from 'react'
 import Contact from '../components/Contact'
-import Layout from '../components/Layout'
+// import Layout from '../components/Layout'
+import Link from 'next/link'
+import styles from '../styles/Home.module.scss'
+
+
 
 
 
@@ -9,13 +13,16 @@ function contact() {
     return (
       
       
-
-           
+        <>
+        <Link href="/">
+           <a className={styles.back}>Back</a>
+        </Link>   
         <div>
-            <Layout>
+            
             <Contact />
-            </Layout>
         </div>
+
+        </>
     
     )
 }
