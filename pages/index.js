@@ -1,7 +1,6 @@
 import Head from 'next/head'
 import Project from '../components/Project'
 import Contact from '../components/Contact'
-// import Layout from '../components/Layout'
 import Nav from '../components/Nav'
 import Name from '../components/Name'
 import styles from '../styles/Home.module.scss'
