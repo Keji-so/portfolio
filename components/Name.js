@@ -9,14 +9,16 @@ const easing = [0.6, -0.05, 0.01, 0.99];
 
 const fadeIn = {
   initial: {
+    opacity: 0,
     y: -50,
   },
   animate: {
+    opacity: 1,
     y: 0,
     transition: {
       duration: .5,
       ease: easing,
-      delay: 0.2
+      delay: 0.4
     }
   }
 };
@@ -34,7 +36,7 @@ function Name() {
       <>
 
      <div className={styles.cover}>
-           <motion.div variants={fadeIn} className={styles.names}>
+           <div className={styles.names}>
              
         <Link href="/">
              <div className={styles.left}>
@@ -53,7 +55,7 @@ function Name() {
                   <div className={ `${styles["line"]} ${styles[ham ? "" : "last"]}`}></div>
              </div>
 
-          </motion.div>
+          </div>
 
      </div>
     

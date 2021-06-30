@@ -5,6 +5,8 @@ import { Projects } from '../components/data.js';
 import { BsBoxArrowInUpRight } from "react-icons/bs";
 import { VscRepoForked } from "react-icons/vsc";
 import Name from '../components/Name'
+import { motion } from 'framer-motion';
+
 
 
 
@@ -17,6 +19,8 @@ return (
       
  
   <Name />
+  <motion.div exit={{ opacity: 0 }} initial={{y: -400, opacity: 0}}
+      animate={{y: 0, opacity: 1}} transition={{ duration: 0.7, delay: 0.1,  ease: "easeInOut" }} >
     <div className={styles.projects}>
         Projects
     </div>
@@ -55,8 +59,9 @@ return (
           </div>
           )
        })}
-        
-   </div>
+    </div>    
+   </motion.div>
+   
    </>
     )
 }

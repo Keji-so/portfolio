@@ -1,4 +1,7 @@
 import { useEffect } from 'react'
+import { AiFillGithub } from "react-icons/ai";
+import { AiOutlineTwitter } from "react-icons/ai";
+import { FaLinkedin } from "react-icons/fa";
 import Head from 'next/head'
 import Project from '../components/Project'
 import Contact from '../components/Contact'
@@ -19,15 +22,26 @@ const fadeInUp = {
     transition: {
       duration: .6,
       ease: easing,
-      delay: 0.7
+      delay: 0.8
+    }
+  },
+  pageExit: {
+    opacity: 0,
+    y: -400,
+    backgroundColor: '#fafafa',
+    transition: {
+    duration: 0.3,
+    ease: "linear"
     }
   }
 };
 
+
+
 const stagger = {
   animate : {
     transition: {
-      staggerChildren: 0.3,
+      staggerChildren: 0.5,
       delay: 0.3
     }
   }
@@ -40,8 +54,7 @@ export default function Home() {
 
   return (
 
-     <motion.div layoutId="lay" exit={{ opacity: 0 }} initial="initial"
-     animate="animate" transition={{ duration: 1,  ease: "easeIn", delay: 0.1 }}>
+     <div>
       <Head>
         <title>Morenikeji</title>
         <meta name="description" content="frontend portfolio homepage developer" />
@@ -49,35 +62,46 @@ export default function Home() {
 
       <Name />
 
-     <motion.div layoutId="start" variants={stagger} exit={{ opacity: 0 }} initial={{y: -400, opacity: 0}}
+     <motion.div  initial={{y: -400, opacity: 0}}
       animate={{y: 0, opacity: 1}} transition={{ duration: 0.7, delay: 0.1,  ease: "easeInOut" }} className={styles.container}>
 
        <div className={styles.left}>
          
 
-          <motion.div className={styles.content} variants={stagger}>
+          <div className={styles.content} >
             <div className={styles.name_reveal}>
-              <motion.h1  variants={fadeInUp} className={styles.name_anim}>Morenikeji Ojo.</motion.h1>
+              <motion.h1 initial="initial" animate="animate" variants={fadeInUp} className={styles.name_anim}>Morenikeji Ojo.</motion.h1>
             </div>
              
              <div className={styles.description}>
-                 <motion.div variants={fadeInUp} className={styles.desc}>I’m a Frontend software developer, with a passion for responsive website design and a firm believer in the mobile-first approach.</motion.div>
+                 <motion.div initial="initial" animate="animate" variants={fadeInUp} className={styles.desc}>I’m a Frontend software developer, with a passion for responsive website design and a firm believer in the mobile-first approach.</motion.div>
           
              </div>
             
-           </motion.div>
+           </div>
 
  
 
           
-        <div className={styles.email}>
-         <motion.a
-         initial={{y: 100, opacity: 0}}
-         animate={{y: 0, opacity: 1}}
-         transition={{delay: 0.7}}
+          <div className={styles.email_cont}>
+            <div className={styles.email}>
+              <motion.div className={styles.mail} initial="initial" animate="animate" variants={fadeInUp}> ojokeji@gmail.com</motion.div>
+            </div> 
 
-         >ojokeji@gmail.com</motion.a> 
-        </div>
+          <motion.div className={styles.icons}>
+              <Link href="https://github.com/Keji-so">
+                  <motion.div initial="initial" animate="animate" variants={fadeInUp} className={styles.icon}><AiFillGithub size="1.8rem" /></motion.div>
+              </Link>
+              <Link href="https://www.linkedin.com/in/morenikeji-ojo/">
+                  <motion.div initial="initial" animate="animate" variants={fadeInUp} className={styles.icon}><FaLinkedin size="1.8rem" /></motion.div>
+              </Link>
+              <Link href="https://twitter.com/keji_so">
+                  <motion.div initial="initial" animate="animate" variants={fadeInUp} className={styles.icon}><AiOutlineTwitter size="1.8rem" /></motion.div>
+              </Link>
+          </motion.div>
+          
+          
+          </div>
        </div>
 
        <div className={styles.right}>
@@ -89,6 +113,6 @@ export default function Home() {
 
 <Contact />
    
-    </motion.div> 
+    </div> 
   )
 }
