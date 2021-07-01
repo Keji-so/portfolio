@@ -20,32 +20,35 @@ const fadeInUp = {
   animate: {
     y: 0,
     transition: {
-      duration: .6,
+      duration: .3,
       ease: easing,
-      delay: 0.8
-    }
-  },
-  pageExit: {
-    opacity: 0,
-    y: -400,
-    backgroundColor: '#fafafa',
-    transition: {
-    duration: 0.3,
-    ease: "linear"
+      delay: 0.3
     }
   }
 };
 
-
-
-const stagger = {
-  animate : {
+const pageEnter = {
+  initial: {
+    x: "100vw", 
+    opacity: 0
+  },
+  animate: {
+    x: 0, 
+    opacity: 1,
     transition: {
-      staggerChildren: 0.5,
-      delay: 0.3
+     type: "spring",
+     duration: 0.5, 
+     delay: 0.5, 
+     when: "beforeChildren",
+     ease: "easeInOut"
+
     }
   }
 }
+
+
+
+
 
 export default function Home() {
 
@@ -62,19 +65,18 @@ export default function Home() {
 
       <Name />
 
-     <motion.div  initial={{y: -400, opacity: 0}}
-      animate={{y: 0, opacity: 1}} transition={{ duration: 0.7, delay: 0.1,  ease: "easeInOut" }} className={styles.container}>
+     <motion.div initial="initial" animate="animate" variants={pageEnter} className={styles.container}>
 
        <div className={styles.left}>
          
 
           <div className={styles.content} >
             <div className={styles.name_reveal}>
-              <motion.h1 initial="initial" animate="animate" variants={fadeInUp} className={styles.name_anim}>Morenikeji Ojo.</motion.h1>
+              <motion.h1 className={styles.name_anim}>Morenikeji Ojo.</motion.h1>
             </div>
              
              <div className={styles.description}>
-                 <motion.div initial="initial" animate="animate" variants={fadeInUp} className={styles.desc}>I’m a Frontend software developer, with a passion for responsive website design and a firm believer in the mobile-first approach.</motion.div>
+                 <motion.div  variants={fadeInUp} className={styles.desc}>I’m a Frontend software developer, with a passion for responsive website design and a firm believer in the mobile-first approach.</motion.div>
           
              </div>
             
@@ -85,18 +87,18 @@ export default function Home() {
           
           <div className={styles.email_cont}>
             <div className={styles.email}>
-              <motion.div className={styles.mail} initial="initial" animate="animate" variants={fadeInUp}> ojokeji@gmail.com</motion.div>
+              <motion.div className={styles.mail} variants={fadeInUp}> ojokeji@gmail.com</motion.div>
             </div> 
 
           <motion.div className={styles.icons}>
               <Link href="https://github.com/Keji-so">
-                  <motion.div initial="initial" animate="animate" variants={fadeInUp} className={styles.icon}><AiFillGithub size="1.8rem" /></motion.div>
+                  <motion.div variants={fadeInUp} className={styles.icon}><AiFillGithub size="1.8rem" /></motion.div>
               </Link>
               <Link href="https://www.linkedin.com/in/morenikeji-ojo/">
-                  <motion.div initial="initial" animate="animate" variants={fadeInUp} className={styles.icon}><FaLinkedin size="1.8rem" /></motion.div>
+                  <motion.div  variants={fadeInUp} className={styles.icon}><FaLinkedin size="1.8rem" /></motion.div>
               </Link>
               <Link href="https://twitter.com/keji_so">
-                  <motion.div initial="initial" animate="animate" variants={fadeInUp} className={styles.icon}><AiOutlineTwitter size="1.8rem" /></motion.div>
+                  <motion.div variants={fadeInUp} className={styles.icon}><AiOutlineTwitter size="1.8rem" /></motion.div>
               </Link>
           </motion.div>
           

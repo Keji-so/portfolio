@@ -6,7 +6,24 @@ import Name from '../components/Name'
 import { motion } from 'framer-motion';
 
 
+const pageEnter = {
+  initial: {
+    x: "100vw", 
+    opacity: 0
+  },
+  animate: {
+    x: 0, 
+    opacity: 1,
+    transition: {
+     type: "tween",
+     duration: 0.8,
+     delay: 0.5, 
+     when: "beforeChildren",
+     ease: "easeInOut"
 
+    }
+  }
+}
 
 
 function about() {
@@ -16,8 +33,8 @@ function about() {
     
 
       <Name />
-        <motion.div exit={{ opacity: 0 }} initial={{y: -400, opacity: 0}}
-      animate={{y: 0, opacity: 1}} transition={{ duration: 0.7, delay: 0.1,  ease: "easeInOut" }} className={styles.about}>
+      
+        <motion.div variants={pageEnter} initial="initial" animate="animate" className={styles.about}>
             <div className={styles.top}>
                 <div className={styles.title}>
                     Morenikeji Ojo.

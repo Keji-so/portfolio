@@ -7,8 +7,40 @@ import { VscRepoForked } from "react-icons/vsc";
 import Name from '../components/Name'
 import { motion } from 'framer-motion';
 
+const easing = [0.6, -0.05, 0.01, 0.99];
 
+const pageEnter = {
+  initial: {
+    x: "100vw", 
+    opacity: 0
+  },
+  animate: {
+    x: 0, 
+    opacity: 1,
+    transition: {
+     type: "tween",
+     duration: 0.8,
+     delay: 0.5, 
+     when: "beforeChildren",
+     ease: "easeInOut"
 
+    }
+  }
+}
+
+const fadeInUp = {
+  initial: {
+    y: 200,
+  },
+  animate: {
+    y: 0,
+    transition: {
+      duration: .5,
+      ease: easing,
+      delay: 0.4
+    }
+  }
+};
 
 
 function Card() {
@@ -19,12 +51,15 @@ return (
       
  
   <Name />
-  <motion.div exit={{ opacity: 0 }} initial={{y: -400, opacity: 0}}
-      animate={{y: 0, opacity: 1}} transition={{ duration: 0.7, delay: 0.1,  ease: "easeInOut" }} >
-    <div className={styles.projects}>
-        Projects
+  <div >
+
+    <div className={styles.proj_cont}>
+      <motion.div initial="initial" animate="animate" variants={fadeInUp}  className={styles.projects}>
+          Projects
+      </motion.div>
     </div>
-    <div className={styles.card_container}>
+    
+    <motion.div variants={pageEnter} initial="initial" animate="animate" className={styles.card_container}>
        {Projects.map(project => {
        
           return (
@@ -59,8 +94,8 @@ return (
           </div>
           )
        })}
-    </div>    
-   </motion.div>
+    </motion.div>    
+   </div>
    
    </>
     )

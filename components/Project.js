@@ -2,7 +2,31 @@ import {useState} from 'react';
 import Link from 'next/link'
 import styles from '../styles/Projects.module.scss';
 import { CgArrowLongRight } from "react-icons/cg";
+import { motion } from 'framer-motion';
 
+const container = {
+    show: {
+        transition: {
+            staggerChildren: 0.3
+        },
+    }
+};
+
+const items = {
+    hidden: {
+        opacity: 0,
+        y: 200
+    },
+    show: {
+        opacity: 1,
+        y: 0,
+        transition: {
+            ease: "linear",
+            duration: 0.8
+
+        }
+    }
+}
 
 const Project = () => {
 
@@ -51,15 +75,15 @@ const Project = () => {
 
         <div className={styles.projects}>Projects</div>
 
-        <div className={styles.project}>
+        <motion.div initial="hidden" animate="show" variants={container} className={styles.project}>
             <div className={styles.left}>
             <a href="https://keji-so.github.io/novela-g/#/">
-                <div className={styles.container} onMouseEnter={novelaHover} onMouseLeave={novelaLeave}>
+                <motion.div variants={items} className={styles.container} onMouseEnter={novelaHover} onMouseLeave={novelaLeave}>
                     <div className={ `${styles["title"]} ${styles[novela ? "" : "title-active"]}`}>Novela</div>
                     <div className={ `${styles["image"]} ${styles[novela ? "" : "image-active"]}`}>
                         <img className={styles.img} src="./images/novela.png" alt="novela image" />
                     </div>
-                </div>
+                </motion.div>
              </a>   
 
         <Link href="/projects">
@@ -79,25 +103,25 @@ const Project = () => {
 
             <div className={styles.right}>
             <a href="https://eko-gallery.netlify.app">
-               <div className={styles.container} onMouseEnter={ekoHover} onMouseLeave={ekoLeave}>
+               <motion.div variants={items} className={styles.container} onMouseEnter={ekoHover} onMouseLeave={ekoLeave}>
                  <div className={ `${styles["title"]} ${styles[eko ? "" : "title-active"]}`}>Eko-Gallery</div>
                     <div className={ `${styles["image"]} ${styles[eko ? "" : "image-active"]}`}>
                         <img  src="./images/eko.png" alt="eko image" />
                     </div>
                     
-                </div>
+                </motion.div>
             </a>
 
             <a href="https://gateway-page.netlify.app">
-                 <div className={ `${styles["container"]} ${styles["contain"]}`} onMouseEnter={gateHover} onMouseLeave={gateLeave}>
+                 <motion.div variants={items} className={ `${styles["container"]} ${styles["contain"]}`} onMouseEnter={gateHover} onMouseLeave={gateLeave}>
                     <div className={ `${styles["title"]} ${styles["titles"]} ${styles[gate ? "" : "title-active"]}`}>Gateway</div>
                     <div className={ `${styles["image"]} ${styles["images"]} ${styles[gate ? "" : "images-active"]}`}>
                         <img src="./images/gateway.png" alt="gateway image" />
                     </div>
-                </div>
+                </motion.div>
            </a>   
             </div>
-        </div>
+        </motion.div>
 
      </div>  
     )
