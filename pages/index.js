@@ -61,7 +61,7 @@ export default function Home() {
      <div>
       <Head>
         <title>Morenikeji</title>
-        <meta name="description" content="frontend portfolio homepage developer" />
+        <meta name="description" content="frontend portfolio homepage developer morenikeji ojo" />
       </Head>
 
       <Name />

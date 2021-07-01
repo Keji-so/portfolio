@@ -22,6 +22,7 @@
 .project {
     display: flex;
     margin: 10% 0;
+    
 
     @include bp(mobile) {
         flex-direction: column-reverse;
@@ -33,6 +34,7 @@
 
     .left {
         width: 50%;
+
 
         @include bp(mobile) {
             width: 100%;
@@ -123,6 +125,8 @@
             align-self: center;
             position: relative;
             margin-top: 30%;
+            overflow-x: visible;
+
 
             @include bp(tablet) {
                 margin-top: 15%;
@@ -215,6 +219,7 @@
     .right {
         width: 50%;
 
+
         @include bp(mobile) {
             width: 100%;
         }
@@ -225,6 +230,7 @@
 
          a {
              text-decoration: none;
+
          }
 
         .container {
