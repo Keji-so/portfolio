@@ -14,23 +14,25 @@ const fadeLeft = {
   animate: {
     x: 0,
     transition: {
-      duration: .6,
+      duration: 1,
       ease: easing,
-      delay: 0.8
+      delay: 0.9
     }
   }
 };
 
 const fadeRight = {
   initial: {
+    opacity: 0,
     x: -200,
   },
   animate: {
+    opacity: 1,
     x: 0,
     transition: {
-      duration: .6,
+      duration: 1,
       ease: easing,
-      delay: 0.8
+      delay: 0.9
     }
   }
 };
@@ -46,23 +48,13 @@ const fadeInUp = {
       ease: easing,
       delay: 0.3
     }
-  },
-  pageExit: {
-    opacity: 0,
-    y: -400,
-    backgroundColor: '#fafafa',
-    transition: {
-    duration: 0.3,
-    ease: "linear"
-    }
   }
 };
 
 const stagger = {
   animate : {
     transition: {
-      staggerChildren: 0.5,
-      delay: 0.5
+      staggerChildren: 0.3
     }
   }
 }

@@ -37,12 +37,12 @@ const pageEnter = {
     opacity: 1,
     transition: {
      type: "spring",
-     duration: 0.5, 
-     damping: 8,
+     duration: 0.5,
+     bounce: 0.3,
      delay: 0.5, 
      when: "beforeChildren",
-     ease: "easeInOut"
-
+     ease: "easeInOut",
+     stagger: 0.5
     }
   }
 }
