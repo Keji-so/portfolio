@@ -38,6 +38,7 @@ const pageEnter = {
     transition: {
      type: "spring",
      duration: 0.5, 
+     damping: 8,
      delay: 0.5, 
      when: "beforeChildren",
      ease: "easeInOut"

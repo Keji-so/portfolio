@@ -24,13 +24,12 @@ const pageChange = {
   }
   };
 
-  // exit="exit"  key={router.route} initial="pageInitial" animate="pageAnimate" variants={pageChange}
 
 
 function MyApp({ Component, pageProps, router }) {
   return (
     <AnimatePresence exitBeforeEnter>
-      <motion.div >
+      <motion.div exit="exit"  key={router.route} initial="pageInitial" animate="pageAnimate" variants={pageChange}>
           <Component {...pageProps} />
       </motion.div>
     </AnimatePresence>
