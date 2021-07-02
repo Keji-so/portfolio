@@ -1,8 +1,7 @@
 import React from 'react'
 import Contact from '../components/Contact'
-// import Layout from '../components/Layout'
+import Head from 'next/head'
 import Link from 'next/link'
-// import styles from '../styles/Home.module.scss'
 import { motion } from 'framer-motion';
 
 
@@ -31,11 +30,18 @@ function contact() {
     return (
       
       
-           
+         <>
+
+       <Head>
+        <title>About-Morenikeji</title>
+        <meta name="description" content="Morenikeji Ojo is a frontend developer, view portfolio homepage" />
+        <meta property="og:title" content="Morenikeji Ojo portfolio" />
+      </Head>
+
         <motion.div  variants={pageEnter} initial="initial" animate="animate">
             <Contact />
         </motion.div>
-
+      </>
       
     
     )

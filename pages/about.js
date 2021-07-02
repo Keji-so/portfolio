@@ -4,6 +4,7 @@ import { FaLinkedin } from "react-icons/fa";
 import { AiFillGithub } from "react-icons/ai";
 import Name from '../components/Name'
 import { motion } from 'framer-motion';
+import Head from 'next/head'
 
 
 const pageEnter = {
@@ -30,7 +31,11 @@ function about() {
     return (
      
       <>
-    
+      <Head>
+        <title>About-Morenikeji</title>
+        <meta name="description" content="Morenikeji Ojo is a frontend developer, view portfolio homepage" />
+        <meta property="og:title" content="Morenikeji Ojo portfolio" />
+      </Head>
 
       <Name />
       

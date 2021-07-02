@@ -61,7 +61,8 @@ export default function Home() {
      <div>
       <Head>
         <title>Morenikeji</title>
-        <meta name="description" content="frontend portfolio homepage developer morenikeji ojo" />
+        <meta name="description" content="Morenikeji Ojo is a frontend developer, view portfolio homepage" />
+        <meta property="og:title" content="Morenikeji Ojo portfolio" />
       </Head>
 
       <Name />

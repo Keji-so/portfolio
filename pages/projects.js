@@ -6,6 +6,8 @@ import { BsBoxArrowInUpRight } from "react-icons/bs";
 import { VscRepoForked } from "react-icons/vsc";
 import Name from '../components/Name'
 import { motion } from 'framer-motion';
+import Head from 'next/head'
+
 
 const easing = [0.6, -0.05, 0.01, 0.99];
 
@@ -48,7 +50,11 @@ function Card() {
    
 return (
     <>  
-      
+      <Head>
+        <title>Projects-Morenikeji</title>
+        <meta name="description" content="Morenikeji Ojo is a frontend developer, view portfolio homepage" />
+        <meta property="og:title" content="Morenikeji Ojo portfolio" />
+      </Head>  
  
   <Name />
   <div >
