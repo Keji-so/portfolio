@@ -63,8 +63,7 @@ export default function Home() {
         <title>Morenikeji</title>
         <meta name="description" content="Morenikeji Ojo is a frontend developer, view portfolio homepage" />
         <meta property="og:title" content="Morenikeji Ojo portfolio" />
-        <meta name="google-site-verification" content="hAoxJvN2BjHkb0H6GTrUu_5uhrZbYO4L_KxHSrjWKxw" />
-      </Head>
+       </Head>
 
       <Name />
 
