@@ -3,38 +3,19 @@ import {useEffect} from 'react';
 import Link from 'next/link'
 import styles from '../styles/Projects.module.scss';
 import { CgArrowLongRight } from "react-icons/cg";
-import { motion, useAnimation } from 'framer-motion';
-import { useInView } from 'react-intersection-observer';
+import { imageAnim } from "../animation"
 
 
 
 
 
-const container = {
-    show: {
-        transition: {
-            staggerChildren: 0.3
-        },
-    }
-};
 
-const items = {
-    hidden: {
-        opacity: 0,
-        y: 200
-    },
-    show: {
-        opacity: 1,
-        y: 0,
-        transition: {
-            ease: "linear",
-            duration: 0.3
-
-        }
-    }
-}
 
 const Project = () => {
+
+    useEffect(() => {
+        imageAnim()
+      }, [])
 
 
 
@@ -81,12 +62,14 @@ const Project = () => {
 
       <div>
 
-        <div className={styles.projects}>Projects</div>
+        <div className={styles.proj_cont}>
+             <div id="sections" className={styles.projects}>Projects</div>
+        </div>
 
         <div  className={styles.project}>
             <div className={styles.left}>
             <a href="https://keji-so.github.io/novela-g/#/">
-                <div  className={styles.container} onMouseEnter={novelaHover} onMouseLeave={novelaLeave}>
+                <div id="sections" className={styles.container} onMouseEnter={novelaHover} onMouseLeave={novelaLeave}>
                     <div className={ `${styles["title"]} ${styles[novela ? "" : "title-active"]}`}>Novela</div>
                     <div className={ `${styles["image"]} ${styles[novela ? "" : "image-active"]}`}>
                         <img className={styles.img} src="./images/novela.png" alt="novela image" />
@@ -95,23 +78,26 @@ const Project = () => {
              </a>   
 
         <Link href="/projects">
-           <div className={styles.button} onMouseEnter={btnHover} onMouseLeave={btnLeave}>
-             <div className={styles.btn}>
-                  View More
-                <div className={ `${styles["icon"]} ${styles[right ? "" : "right-active"]}`}>
-                  <CgArrowLongRight size="1.9rem" />  
+            <div className={styles.btn_cont}>
+              <div  id="sections" className={styles.button} onMouseEnter={btnHover} onMouseLeave={btnLeave}>
+                <div className={styles.btn}>
+                    View More
+                    <div className={ `${styles["icon"]} ${styles[right ? "" : "right-active"]}`}>
+                    <CgArrowLongRight size="1.9rem" />  
+                    </div>
+                    
                 </div>
-                
-             </div>
-          </div>
+              </div>
+            </div>
+         
         </Link>
                 
                
             </div>
 
             <div className={styles.right}>
-            <a href="https://eko-gallery.netlify.app">
-               <div  className={styles.container} onMouseEnter={ekoHover} onMouseLeave={ekoLeave}>
+            <a  href="https://eko-gallery.netlify.app">
+               <div id="sections"  className={styles.container} onMouseEnter={ekoHover} onMouseLeave={ekoLeave}>
                  <div className={ `${styles["title"]} ${styles[eko ? "" : "title-active"]}`}>Eko-Gallery</div>
                     <div className={ `${styles["image"]} ${styles[eko ? "" : "image-active"]}`}>
                         <img  src="./images/eko.png" alt="eko image" />
@@ -121,7 +107,7 @@ const Project = () => {
             </a>
 
             <a href="https://gateway-page.netlify.app">
-                 <div className={ `${styles["container"]} ${styles["contain"]}`} onMouseEnter={gateHover} onMouseLeave={gateLeave}>
+                 <div id="sections" className={ `${styles["container"]} ${styles["contain"]}`} onMouseEnter={gateHover} onMouseLeave={gateLeave}>
                     <div className={ `${styles["title"]} ${styles["titles"]} ${styles[gate ? "" : "title-active"]}`}>Gateway</div>
                     <div className={ `${styles["image"]} ${styles["images"]} ${styles[gate ? "" : "images-active"]}`}>
                         <img src="./images/gateway.png" alt="gateway image" />

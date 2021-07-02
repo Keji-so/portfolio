@@ -1,27 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&display=swap');
 @import "mixins";
 
-.projects {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 42px;
-    font-weight: 600;
-    margin: 50px 30px;
-    color: #222831;
 
-    @include bp(mobile) {
-        margin: 50px 0;
-        font-size: 30px
+.proj_cont {
+    overflow: hidden;
+
+    .projects {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 42px;
+        font-weight: 600;
+        margin: 50px 30px;
+        color: #222831;
+    
+        @include bp(mobile) {
+            margin: 50px 0;
+            font-size: 30px
+        }
+    
+        @include bp(tablet) {
+            font-size: 38px;
+        }
+    
     }
-
-    @include bp(tablet) {
-        font-size: 38px;
-    }
-
 }
+
 
 .project {
     display: flex;
-    margin: 10% 0;
+    margin: 5% 0;
     
 
     @include bp(mobile) {
@@ -34,6 +40,8 @@
 
     .left {
         width: 50%;
+        overflow-y: hidden;
+
 
 
         @include bp(mobile) {
@@ -86,6 +94,7 @@
                 height: 40%;
                 transform: translate(-10%, 15%);
                 transition: all 0.3s ease-out;
+                overflow-y: hidden;
                 
 
                 @include bp(mobile) {
@@ -119,105 +128,113 @@
 
         }
 
-        
-        
-       .button {
-            align-self: center;
-            position: relative;
-            margin-top: 30%;
-            overflow-x: visible;
+      
+        .btn_cont {
+            overflow-y: hidden;
 
-
-            @include bp(tablet) {
-                margin-top: 15%;
-            }
-
-
-
-        .btn {
-            margin: 10% 30%;
-            border: #cbcbcb 1px solid;
-            border-right: none;
-            padding: 15px 0;
-            display: flex;  
-            align-items: center;
-            justify-content: center;
-            font-size: 18px;
-            cursor: pointer;
-            font-weight: 700;
-            font-size: 16px;
-            color: #1b1b1b;
-            font-family: 'Montserrat', sans-serif;
-
-            @include bp(mobile) {
-               font-size: 14px;
-               margin: 10%; 
-            }
-
-            @include bp(laptop) {
-                font-size: 15px;
-            }
-
-           
-            
-
-            &::before {
-                content: "";
-                position: absolute;
-                width: 1px;
-                height: 15px;
-                top: 0;
-                right: 30%;
-                background: #cbcbcb;
-
-                @include bp(mobile) {
-                right: 10%;
+            .button {
+                align-self: center;
+                position: relative;
+                margin-top: 30%;
+                overflow-x: visible;
+    
+    
+                @include bp(tablet) {
+                    margin-top: 15%;
                 }
-            }
-
-            &::after {
-                content: "";
-                position: absolute;
-                width: 1px;
-                height: 15px;
-                bottom: 0;
-                right: 30%;
-                background: #cbcbcb;
-
-                @include bp(mobile) {
-                right: 10%;
-                }
-            }
-
-            .icon {
-                display: flex;
+    
+    
+    
+            .btn {
+                margin: 10% 30%;
+                border: #cbcbcb 1px solid;
+                border-right: none;
+                padding: 15px 0;
+                display: flex;  
                 align-items: center;
-                position: absolute;
-                right: 28%;
-                color: #6f6d6d;
-                transition: all 0.3s ease-out;
-
+                justify-content: center;
+                font-size: 18px;
+                cursor: pointer;
+                font-weight: 700;
+                font-size: 16px;
+                color: #1b1b1b;
+                font-family: 'Montserrat', sans-serif;
+    
                 @include bp(mobile) {
-                right: 5%;
+                   font-size: 14px;
+                   margin: 10%; 
                 }
-
-            }
-            
-             .right-active {
-                 transform: translateX(30%);
-
-                 @include bp(mobile) {
-                    transform: translateX(10%);
+    
+                @include bp(laptop) {
+                    font-size: 15px;
+                }
+    
+               
+                
+    
+                &::before {
+                    content: "";
+                    position: absolute;
+                    width: 1px;
+                    height: 15px;
+                    top: 0;
+                    right: 30%;
+                    background: #cbcbcb;
+    
+                    @include bp(mobile) {
+                    right: 10%;
+                    }
+                }
+    
+                &::after {
+                    content: "";
+                    position: absolute;
+                    width: 1px;
+                    height: 15px;
+                    bottom: 0;
+                    right: 30%;
+                    background: #cbcbcb;
+    
+                    @include bp(mobile) {
+                    right: 10%;
+                    }
+                }
+    
+                .icon {
+                    display: flex;
+                    align-items: center;
+                    position: absolute;
+                    right: 28%;
+                    color: #6f6d6d;
+                    transition: all 0.3s ease-out;
+    
+                    @include bp(mobile) {
+                    right: 5%;
+                    }
+    
+                }
+                
+                 .right-active {
+                     transform: translateX(30%);
+    
+                     @include bp(mobile) {
+                        transform: translateX(10%);
+                    }
                 }
             }
+           }
+
         }
-       }
+        
+
 
         
     }
 
     .right {
         width: 50%;
+        overflow-y: hidden;
+
 
 
         @include bp(mobile) {
@@ -282,6 +299,8 @@
                 height: 40%;
                 transform: translate(15%, 15%);
                 transition: all 0.3s ease-out;
+                overflow-y: hidden;
+
 
                
 
@@ -316,6 +335,8 @@
             
             .images {
                 transform: translate(0, 15%);
+                overflow-y: hidden;
+
 
                 @include bp(mobile) {
                     transform: translate(0, 20%);

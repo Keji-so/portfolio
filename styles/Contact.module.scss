@@ -1,28 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&display=swap');
 @import "mixins";
 
-.contact {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 42px;
-    font-weight: 600;
-    margin: 20px 30px;
-    color: #222831;
+.contact_cont {
+    overflow-y: hidden;
 
-    @include bp(mobile) {
-        font-size: 32px;
-        margin: 20px 10px;
+    .contact {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 42px;
+        font-weight: 600;
+        margin: 20px 30px;
+        color: #222831;
+    
+        @include bp(mobile) {
+            font-size: 32px;
+            margin: 20px 10px;
+        }
+    
+        @include bp(tablet) {
+           font-size: 38px; 
+           margin: 10px 30px;
+        }
+    
     }
-
-    @include bp(tablet) {
-       font-size: 38px; 
-       margin: 10px 30px;
-    }
-
 }
+
 
 .container {
     display: flex;
-
+    overflow-y: hidden;
 
 
 @include bp(mobile) {
