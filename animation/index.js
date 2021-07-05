@@ -38,7 +38,6 @@ export const imageAnim = () => {
        tl.from(image, {
           duration: 2.2,
            y: 200,
-           delay: -1.9,
            ease: "Expo.easeOut"
        })
       })
