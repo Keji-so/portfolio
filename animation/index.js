@@ -13,8 +13,8 @@ export const imageAnim = () => {
             start: "top bottom",
             toggleActions: "play none none none",
           },
-          duration: 1.7,
-          y: 100,
+          duration: 1.9,
+          y: 200,
           transformOrigin: "center center",
           ease: "Power3.easeOut",
           stagger: {
@@ -36,9 +36,9 @@ export const imageAnim = () => {
         tl.set(container, { autoAlpha: 1 })
       
        tl.from(image, {
-          duration: 2,
-           y: 100,
-           delay: 1.7,
+          duration: 2.2,
+           y: 200,
+           delay: -1.9,
            ease: "Expo.easeOut"
        })
       })

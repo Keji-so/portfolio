@@ -238,8 +238,8 @@
         height: 100%;
         margin: 50px 30px;
         display: flex;
-
         justify-content: center;
+        overflow-y: hidden;
 
        
         @include bp(mobile) {

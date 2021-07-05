@@ -248,6 +248,7 @@
                 transition : all 0.3s ease;
                 color: #343A40;
                 font-weight: 600;
+                -webkit-appearance: none;
 
                 @include bp(mobile) {
                 padding: 10px 40px;

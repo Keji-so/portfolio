@@ -88,10 +88,10 @@ function Contact() {
                         <Link href="https://github.com/Keji-so">
                             <div className={styles.icon}><AiFillGithub size="1.8rem" /></div>
                         </Link>
-                        <Link href="https://github.com/Keji-so">
+                        <Link href="https://www.linkedin.com/in/morenikeji-ojo/">
                             <div className={styles.icon}><FaLinkedin size="1.8rem" /></div>
                         </Link>
-                        <Link href="https://www.linkedin.com/in/morenikeji-ojo/">
+                        <Link href="https://twitter.com/keji_so">
                             <div className={styles.icon}><AiOutlineTwitter size="1.8rem" /></div>
                         </Link>
                     </div>
