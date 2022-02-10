@@ -60,7 +60,7 @@ function about() {
                 I am a results-oriented Frontend Developer dedicated to creating and optimizing interactive, user-friendly, and feature-rich websites.
                 I leverage analytical skills and strong attention to detail in order to deliver original and efficient web solutions.
              <p>
-                I am seeking for new opportunities and challenges that will expand my skill set.
+                I am currently a junior User Interface Developer at CheckDc.
              </p>
            
             </div>

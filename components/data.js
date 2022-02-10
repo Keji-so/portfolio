@@ -17,6 +17,14 @@ export const Projects = [
     },
     {
         "id": 3,
+        "title": "Debonaire",
+        "description": "creative hair landing page (on going)",
+        "lang": ["javascript", "SASS"],
+        "live": "https://debonaire.netlify.app/",
+        "code":"https://github.com/Keji-so/debonaire"
+    },
+    {
+        "id": 4,
         "title": "Eko Gallery",
         "description": "Online art gallery",
         "lang": ["React", "SASS"],
@@ -24,7 +32,7 @@ export const Projects = [
         "code":"https://github.com/Keji-so/eko-gallery"
     },
     {
-        "id": 4,
+        "id": 5,
         "title": "Github Profile",
         "description": "Github repository search page clone",
         "lang": ["HTML", "CSS", "Graphql"],
@@ -32,7 +40,7 @@ export const Projects = [
         "code":"https://github.com/Keji-so/github-profile"
     },
     {
-        "id": 5,
+        "id": 6,
         "title": "Portfolio",
         "description": "My portfolio website",
         "lang": ["Nextjs", "SASS"],
@@ -40,7 +48,7 @@ export const Projects = [
         "code":"https://github.com/Keji-so/portfolio"
     },
     {
-        "id": 6,
+        "id": 7,
         "title": "Cocktails",
         "description": "cocktail images on search",
         "lang": ["React", "CSS"],
@@ -48,7 +56,7 @@ export const Projects = [
         "code":"https://github.com/Keji-so/cocktail-api-project"
     },
     {
-        "id": 7,
+        "id": 8,
         "title": "SignUp",
         "description": "A Signup form",
         "lang": ["React", "SASS", "Node"],
@@ -56,7 +64,7 @@ export const Projects = [
         "code":"https://github.com/Keji-so/signup-app"
     },
     {
-        "id": 8,
+        "id": 9,
         "title": "Movies-more",
         "description": "Display movie information on search",
         "lang": ["React", "SASS"],

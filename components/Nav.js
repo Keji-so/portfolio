@@ -82,7 +82,7 @@ function Nav() {
         <Link href="/contact">
             <motion.a  variants={fadeRight} className={ `${styles["option"]} ${styles["contact"]}`}>Contact</motion.a>
         </Link>
-        <Link href="https://drive.google.com/file/d/1a0txSzZOrmOzmeRlK73wxmSvkO7zzVkh/view?usp=sharing">
+        <Link href="https://drive.google.com/file/d/19vgcdgJdjBGA9KLBM7Ir4pRRPvjtDn_C/view?usp=sharing">
             <motion.div initial="initial" animate="animate" variants={fadeLeft} className={ `${styles["option"]} ${styles["resume"]}`}>Resume</motion.div>
         </Link>
            </div>
